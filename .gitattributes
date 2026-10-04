@@ -1,0 +1,2 @@
+# Preserve downloaded research evidence exactly, including source whitespace.
+docs/research/pilot-data-audit/raw/** -text -whitespace

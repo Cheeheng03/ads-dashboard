@@ -15,6 +15,20 @@
       "when": 1791082413070,
       "tag": "0001_parched_baron_strucker",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791105637624,
+      "tag": "0002_illegal_eternity",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1791128270294,
+      "tag": "0003_wonderful_exodus",
+      "breakpoints": true
     }
   ]
 }

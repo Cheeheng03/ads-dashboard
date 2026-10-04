@@ -1,8 +1,9 @@
+import type {SavedAnalysis} from './estimation-model';
 import type {Performance} from './analytics-model';
 export type Company={id:string;name:string;domain:string;page_id:string;market:string;category:string;notes:string;created_at:string};
 export type Ad={id:string;company_id:string;library_id:string|null;title:string;body:string;format:string;status:string;start_date:string;source_url:string;landing_url:string;image_url:string;market:string;hook:string;angle:string;notes:string;hypothesis:string;board:string;pinned:number;reach:number|null;spend:number|null;currency:string;metric_source:string;frequency_low:number|null;frequency_high:number|null;cpm_low:number|null;cpm_high:number|null;first_seen:string;last_seen:string};
 export type Observation={id:string;ad_id:string;status:string;observed_at:string;source:string};
-export type Workspace={performance?:Performance[];companies:Company[];ads:Ad[];observations:Observation[];activity:{id:string;message:string;created_at:string}[]};
+export type Workspace={analysisModels?:SavedAnalysis[];performance?:Performance[];companies:Company[];ads:Ad[];observations:Observation[];activity:{id:string;message:string;created_at:string}[]};
 export const blank:Workspace={companies:[],ads:[],observations:[],activity:[]};
 export const age=(s:string)=>s?Math.max(0,Math.floor((Date.now()-new Date(s).getTime())/86400000)):null;
 export function scenario(a:Ad){if([a.reach,a.frequency_low,a.frequency_high,a.cpm_low,a.cpm_high].some(v=>v===null))return null;return {low:a.reach!*a.frequency_low!*a.cpm_low!/1000,high:a.reach!*a.frequency_high!*a.cpm_high!/1000};}

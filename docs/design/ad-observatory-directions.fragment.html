@@ -1,0 +1,242 @@
+<div id="ao-directions">
+<style>
+#ao-directions { --ao-bg:#101313; --ao-panel:#191e1d; --ao-raised:#222928; --ao-line:#34413c; --ao-text:#edf3ee; --ao-dim:#aab9b0; --ao-green:#b2e3c3; --ao-violet:#c7bcf1; color:var(--ao-text); font-family:Inter,system-ui,sans-serif; font-size:14px; line-height:1.5; }
+#ao-directions * { box-sizing:border-box; }
+#ao-directions .ao-app { min-height:930px; background:var(--ao-bg); border:1px solid var(--ao-line); border-radius:18px; overflow:hidden; }
+#ao-directions .ao-top { padding:17px 24px; display:flex; align-items:center; justify-content:space-between; gap:14px; border-bottom:1px solid var(--ao-line); background:#151a18; flex-wrap:wrap; }
+#ao-directions .ao-brand { display:flex; align-items:center; gap:10px; font-weight:600; letter-spacing:-.3px; }
+#ao-directions .ao-brand i { color:var(--ao-green); }
+#ao-directions .ao-nav { color:var(--ao-dim); font-size:12px; display:flex; gap:18px; flex-wrap:wrap; }
+#ao-directions .ao-current { color:var(--ao-text); }
+#ao-directions .ao-content { padding:27px; }
+#ao-directions .ao-heading { display:flex; justify-content:space-between; align-items:flex-start; gap:18px; margin-bottom:22px; flex-wrap:wrap; }
+#ao-directions .ao-eyebrow { color:var(--ao-green); text-transform:uppercase; font-size:11px; letter-spacing:1.6px; margin-bottom:7px; }
+#ao-directions h2 { font-size:27px; line-height:1.15; font-weight:500; margin:0 0 8px; letter-spacing:-.9px; }
+#ao-directions h3 { font-size:15px; font-weight:500; margin:0 0 14px; }
+#ao-directions p { margin:0; }
+#ao-directions .ao-muted { color:var(--ao-dim); font-size:12px; }
+#ao-directions .ao-badge { background:#25342b; color:#c1e5cc; border:1px solid #3e5345; border-radius:7px; padding:5px 9px; font-size:11px; display:inline-flex; align-items:center; gap:6px; }
+#ao-directions .ao-demo { background:#322c42; color:#ded0ff; border-color:#524663; }
+#ao-directions .ao-button, #ao-directions select { font:inherit; font-size:12px; padding:9px 12px; background:var(--ao-raised); color:var(--ao-text); border:1px solid var(--ao-line); border-radius:8px; min-height:38px; }
+#ao-directions .ao-primary { background:var(--ao-green); color:#142319; border-color:var(--ao-green); font-weight:600; }
+#ao-directions button:hover { filter:brightness(1.08); }
+#ao-directions button:focus-visible, #ao-directions a:focus-visible, #ao-directions select:focus-visible { outline:2px solid var(--ao-violet); outline-offset:3px; }
+#ao-directions a { color:var(--ao-green); text-decoration:none; }
+#ao-directions a:hover { text-decoration:underline; }
+#ao-directions .ao-grid2 { display:grid; grid-template-columns:1fr 1fr; gap:17px; }
+#ao-directions .ao-panel { min-width:0; border:1px solid var(--ao-line); border-radius:13px; padding:19px; background:var(--ao-panel); }
+#ao-directions .ao-company { display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap; margin-bottom:19px; }
+#ao-directions .ao-company-name { display:flex; align-items:center; gap:10px; font-weight:500; }
+#ao-directions .ao-avatar { width:36px; height:36px; background:#2b3f31; border-radius:11px; display:grid; place-items:center; color:var(--ao-green); font-size:13px; }
+#ao-directions .ao-purple { background:#383147; color:var(--ao-violet); }
+#ao-directions .ao-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+#ao-directions .ao-number { font-size:28px; font-weight:500; letter-spacing:-1px; font-variant-numeric:tabular-nums; margin:4px 0; }
+#ao-directions .ao-info { background:none; border:0; padding:0 3px; color:var(--ao-dim); font-size:12px; vertical-align:middle; }
+#ao-directions .ao-row { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+#ao-directions .ao-space { margin-top:18px; }
+#ao-directions .ao-smallgap { margin-top:10px; }
+#ao-directions .ao-rule { border:0; border-top:1px solid var(--ao-line); margin:17px 0; }
+#ao-directions .ao-bar-row { display:grid; grid-template-columns:105px minmax(0,1fr) 34px; gap:10px; align-items:center; margin:13px 0; font-size:12px; }
+#ao-directions .ao-track { background:#28312d; height:7px; border-radius:5px; overflow:hidden; }
+#ao-directions .ao-fill { background:var(--ao-green); height:100%; border-radius:5px; }
+#ao-directions .ao-fill-purple { background:var(--ao-violet); }
+#ao-directions .ao-legend { display:flex; gap:16px; flex-wrap:wrap; color:var(--ao-dim); font-size:11px; }
+#ao-directions .ao-legend span { display:flex; align-items:center; gap:6px; }
+#ao-directions .ao-dot { width:7px; height:7px; border-radius:50%; background:var(--ao-green); }
+#ao-directions .ao-dot-purple { background:var(--ao-violet); }
+#ao-directions .ao-pair { display:grid; grid-template-columns:58px 1fr 32px; align-items:center; gap:10px; margin:13px 0; font-size:12px; }
+#ao-directions .ao-pair-lines { display:grid; gap:5px; }
+#ao-directions .ao-pair-values { line-height:12px; font-size:11px; }
+#ao-directions .ao-preview { height:110px; display:grid; place-content:center; text-align:center; gap:9px; background:#252e2a; border-radius:9px; color:var(--ao-dim); font-size:11px; margin:0 0 13px; }
+#ao-directions .ao-preview i { margin:auto; }
+#ao-directions .ao-copy { color:#d8e3db; font-size:13px; margin:9px 0 15px; }
+#ao-directions .ao-footer { display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap; margin-top:22px; }
+#ao-directions .ao-toolbar { display:flex; gap:15px; align-items:center; flex-wrap:wrap; margin-bottom:17px; }
+#ao-directions .ao-toolbar label { display:flex; gap:9px; align-items:center; color:var(--ao-dim); font-size:12px; }
+#ao-directions .ao-table-wrap { overflow-x:auto; }
+#ao-directions table { border-collapse:collapse; width:100%; font-size:12px; }
+#ao-directions th { color:var(--ao-dim); text-align:right; font-weight:400; border-bottom:1px solid var(--ao-line); padding:10px 9px; white-space:nowrap; }
+#ao-directions td { text-align:right; padding:15px 9px; border-bottom:1px solid #2c3530; font-variant-numeric:tabular-nums; white-space:nowrap; }
+#ao-directions th:first-child, #ao-directions td:first-child { text-align:left; white-space:normal; min-width:160px; }
+#ao-directions .ao-adlink { border:0; background:none; text-align:left; color:var(--ao-text); padding:0; font:inherit; }
+#ao-directions .ao-score { display:inline-flex; width:34px; height:27px; align-items:center; justify-content:center; background:#304137; border-radius:5px; color:#d5eedf; }
+#ao-directions .ao-workbench { display:grid; grid-template-columns:minmax(0,1fr) 252px; gap:17px; }
+#ao-directions .ao-selected { background:#28372e; }
+#ao-directions .ao-detail-title { font-size:20px; line-height:1.2; margin:8px 0 14px; font-weight:500; }
+#ao-directions .ao-details { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+#ao-directions .ao-details strong { display:block; font-size:17px; font-weight:500; margin-top:3px; }
+#ao-directions .ao-strip { border:1px solid var(--ao-line); background:#1b221e; border-radius:9px; padding:12px 15px; font-size:12px; color:var(--ao-dim); }
+#ao-directions .ao-company-layout { display:grid; grid-template-columns:230px minmax(0,1fr); gap:17px; }
+#ao-directions .ao-ad-choice { display:block; width:100%; text-align:left; padding:13px; margin-top:9px; background:#222a26; border:1px solid var(--ao-line); color:var(--ao-text); border-radius:9px; font:inherit; font-size:12px; }
+#ao-directions .ao-ad-choice[aria-pressed="true"] { border-color:#a1cbb0; background:#2a3930; }
+#ao-directions .ao-daychart { height:145px; display:flex; gap:12px; align-items:flex-end; margin:22px 0 18px; padding-bottom:24px; border-bottom:1px solid var(--ao-line); }
+#ao-directions .ao-day { flex:1; height:100%; display:flex; align-items:flex-end; gap:3px; position:relative; }
+#ao-directions .ao-daybar { background:var(--ao-green); width:50%; border-radius:3px 3px 0 0; }
+#ao-directions .ao-daybar.purple { background:var(--ao-violet); }
+#ao-directions .ao-day label { position:absolute; bottom:-21px; width:100%; text-align:center; color:var(--ao-dim); font-size:11px; }
+#ao-directions .ao-inline-summary { margin-top:16px; display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+#ao-directions .ao-inline-summary > div { padding:13px; background:#242e28; border-radius:9px; }
+#ao-directions .ao-collapsed { margin-top:14px; color:var(--ao-dim); font-size:12px; }
+#ao-directions .ao-collapsed summary { padding:8px 0; }
+#ao-directions .ao-collapsed p { padding-bottom:9px; }
+#ao-directions [hidden] { display:none!important; }
+#ao-directions .ao-company-detail { margin-top:18px; }
+#ao-directions .ao-company-detail .ao-bar-row { grid-template-columns:150px minmax(0,1fr) 35px; }
+#ao-directions .ao-status { color:var(--ao-dim); font-size:12px; min-height:18px; }
+@media(max-width:720px) { #ao-directions .ao-workbench, #ao-directions .ao-company-layout { grid-template-columns:1fr; } #ao-directions .ao-grid2 { grid-template-columns:1fr; } #ao-directions .ao-content { padding:18px; } #ao-directions .ao-top { padding:16px 18px; } #ao-directions .ao-app { min-height:1600px; } #ao-directions .ao-heading h2 { font-size:24px; } }
+@media(max-width:390px) { #ao-directions .ao-stats { gap:7px; } #ao-directions .ao-number { font-size:24px; } #ao-directions .ao-panel { padding:14px; } #ao-directions .ao-content { padding:13px; } #ao-directions .ao-nav { gap:10px; } }
+@media(pointer:coarse) { #ao-directions button, #ao-directions select { min-height:44px; } #ao-directions .ao-info { min-width:28px; } }
+</style>
+<div class="viz-carousel" aria-label="Ad Observatory dashboard directions">
+<section data-variant="1 · Business comparison" aria-label="Business comparison concept">
+<div class="ao-app" aria-label="Business comparison design">
+  <header class="ao-top"><div class="ao-brand"><i data-lucide="orbit" aria-hidden="true"></i> Ad Observatory</div><nav class="ao-nav" aria-label="Preview navigation"><span class="ao-current">Compare businesses</span><span>Company reports</span><span>Saved ads</span></nav></header>
+  <main class="ao-content">
+    <div class="ao-heading"><div><div class="ao-eyebrow">01 / Market overview</div><h2>Two businesses. One clear view.</h2><p class="ao-muted">Malaysia · Saved sample · Observed 4 Oct 2026</p></div><span class="ao-badge">Existing public records</span></div>
+    <div class="ao-grid2">
+      <section class="ao-panel"><div class="ao-company"><div class="ao-company-name"><span class="ao-avatar">AG</span>Amazin’ Graze</div><button class="ao-button cursor-interaction" data-company="graze">Explore company</button></div><div class="ao-stats"><div><span class="ao-muted">Saved ads</span><div class="ao-number">8</div><span class="ao-muted">Active at last check</span></div><div><span class="ao-muted">Oldest age <button class="ao-info cursor-interaction" aria-label="Ad age formula" data-tooltip="Calendar days between the source start date and 4 Oct 2026. Does not prove uninterrupted delivery.">ⓘ</button></span><div class="ao-number">32d</div><span class="ao-muted">Since source start</span></div><div><span class="ao-muted">Median age</span><div class="ao-number">3d</div><span class="ao-muted">Across 8 saved ads</span></div></div></section>
+      <section class="ao-panel"><div class="ao-company"><div class="ao-company-name"><span class="ao-avatar ao-purple">JB</span>JOBBIE</div><button class="ao-button cursor-interaction" data-company="jobbie">Explore company</button></div><div class="ao-stats"><div><span class="ao-muted">Saved ads</span><div class="ao-number">5</div><span class="ao-muted">Active at last check</span></div><div><span class="ao-muted">Oldest age <button class="ao-info cursor-interaction" aria-label="Ad age formula" data-tooltip="Calendar days between the source start date and 4 Oct 2026. Does not prove uninterrupted delivery.">ⓘ</button></span><div class="ao-number">27d</div><span class="ao-muted">Since source start</span></div><div><span class="ao-muted">Median age</span><div class="ao-number">3d</div><span class="ao-muted">Across 5 saved ads</span></div></div></section>
+    </div>
+    <section class="ao-panel ao-company-detail" hidden aria-live="polite"><div class="ao-row"><h3 class="ao-company-detail-title"></h3><button class="ao-button cursor-interaction" data-close-company>Close report</button></div><div class="ao-company-bars"></div><p class="ao-muted">Age at collection · Not a performance ranking</p></section>
+    <div class="ao-grid2 ao-space">
+      <section class="ao-panel"><h3>How old are the saved ads? <button class="ao-info cursor-interaction" aria-label="Age distribution formula" data-tooltip="Count distinct saved Library IDs in each age band. Same age bands and scale for both businesses. The saved sample is not the full advertiser inventory.">ⓘ</button></h3><div class="ao-legend"><span><b class="ao-dot"></b>Amazin’ Graze</span><span><b class="ao-dot ao-dot-purple"></b>JOBBIE</span></div><div class="ao-pair"><span>0–6 days</span><div class="ao-pair-lines"><div class="ao-track"><div class="ao-fill" style="width:100%"></div></div><div class="ao-track"><div class="ao-fill ao-fill-purple" style="width:50%"></div></div></div><span class="ao-pair-values">6<br>3</span></div><div class="ao-pair"><span>7–29 days</span><div class="ao-pair-lines"><div class="ao-track"></div><div class="ao-track"><div class="ao-fill ao-fill-purple" style="width:33.333%"></div></div></div><span class="ao-pair-values">0<br>2</span></div><div class="ao-pair"><span>30+ days</span><div class="ao-pair-lines"><div class="ao-track"><div class="ao-fill" style="width:33.333%"></div></div><div class="ao-track"></div></div><span class="ao-pair-values">2<br>0</span></div><p class="ao-muted">Number of saved ads · Shared scale: 0–6</p></section>
+      <section class="ao-panel"><h3>Longest-standing creatives</h3><div class="ao-bar-row"><span>AG · Vanilla</span><div class="ao-track"><div class="ao-fill" style="width:100%"></div></div><span>32d</span></div><div class="ao-bar-row"><span>AG · Granola</span><div class="ao-track"><div class="ao-fill" style="width:100%"></div></div><span>32d</span></div><div class="ao-bar-row"><span>JB · History</span><div class="ao-track"><div class="ao-fill ao-fill-purple" style="width:84.375%"></div></div><span>27d</span></div><hr class="ao-rule"><p class="ao-muted">Source age at the same observation date. Longevity is a research signal; profitability is unknown.</p></section>
+    </div>
+    <div class="ao-grid2 ao-space">
+      <section class="ao-panel"><div class="ao-row"><h3>Oh-So-Vanilla Protein Blend</h3><span class="ao-badge">32 days old</span></div><div class="ao-preview"><i data-lucide="image" aria-hidden="true"></i>Original creative preview area</div><p class="ao-copy">“Your No.1 Breakfast Solution &amp; Healthy Snacks in Malaysia.”</p><div class="ao-row"><span class="ao-muted">Saved link description · Image</span><a href="https://www.facebook.com/ads/library/?id=2335409447196556" target="_blank" rel="noopener noreferrer">View ad on Meta ↗</a></div></section>
+      <section class="ao-panel"><div class="ao-row"><h3>Pre-Merdeka history creative</h3><span class="ao-badge">27 days old</span></div><div class="ao-preview"><i data-lucide="gallery-horizontal-end" aria-hidden="true"></i>Original carousel preview area</div><p class="ao-copy">JOBBIE’s Malaysian history series</p><div class="ao-row"><span class="ao-muted">Descriptive label · Carousel</span><a href="https://www.facebook.com/ads/library/?id=28811606778444424" target="_blank" rel="noopener noreferrer">View ad on Meta ↗</a></div></section>
+    </div>
+    <div class="ao-footer"><p class="ao-muted">13 saved ads · One observation · Spend and engagement not collected</p><button class="ao-button ao-primary cursor-interaction" data-choose="1 · Business comparison">Choose business comparison</button></div>
+  </main>
+</div>
+</section>
+<section data-variant="2 · Efficiency leaderboard" aria-label="Efficiency leaderboard concept" hidden>
+<div class="ao-app" aria-label="Efficiency leaderboard design">
+  <header class="ao-top"><div class="ao-brand"><i data-lucide="orbit" aria-hidden="true"></i> Ad Observatory</div><nav class="ao-nav" aria-label="Preview navigation"><span>Businesses</span><span class="ao-current">Efficiency leaderboard</span><span>Saved ads</span></nav></header>
+  <main class="ao-content">
+    <div class="ao-heading"><div><div class="ao-eyebrow">02 / Analyst workbench</div><h2>Rank the result. Keep the evidence.</h2><p class="ao-muted">Fictional brands · Example authorized account reports · 27 Sep–3 Oct</p></div><span class="ao-badge ao-demo">Illustrative data only</span></div>
+    <div class="ao-toolbar"><label>Rank by <select id="ao-rank"><option value="cpc">Lowest cost per link click</option><option value="ctr">Highest link click-through rate</option><option value="age">Oldest source start</option></select></label><span class="ao-muted">MY · Traffic · Images · MYR · 7 complete days</span></div>
+    <div class="ao-workbench">
+      <section class="ao-panel"><div class="ao-row"><h3>Ad leaderboard <button class="ao-info cursor-interaction" aria-label="Relative score formula" data-tooltip="Within this six-ad example, score = 100 × (6 − rank) ÷ 5. Ties use average rank. Score reflects the selected metric, not a probability of success. Each example has at least 100 link clicks.">ⓘ</button></h3><span class="ao-muted">6 eligible examples</span></div><div class="ao-table-wrap"><table><thead><tr><th>Creative / company</th><th>Age</th><th>7d link CTR</th><th>7d link CPC</th><th id="ao-score-header">CPC rank score</th></tr></thead><tbody id="ao-leaderboard"></tbody></table></div><div class="ao-space"><h3 id="ao-rank-chart-title">Cost per link click · MYR</h3><div id="ao-rank-bars"></div></div></section>
+      <aside class="ao-panel" aria-live="polite"><span class="ao-muted">Selected creative</span><h3 class="ao-detail-title" id="ao-selected-name">Breakfast bundle</h3><div class="ao-preview"><i data-lucide="image" aria-hidden="true"></i>Creative preview area</div><p class="ao-copy" id="ao-selected-copy"></p><div class="ao-details" id="ao-selected-metrics"></div><hr class="ao-rule"><span class="ao-muted">Evidence</span><p class="ao-copy">Example daily account reports<br>7 of 7 days present</p><details class="ao-collapsed"><summary>Metric definitions</summary><p>Link CTR = link clicks ÷ impressions × 100. Link CPC = spend ÷ link clicks. Average daily spend = reported 7-day spend ÷ 7.</p></details></aside>
+    </div>
+    <div class="ao-grid2 ao-space"><section class="ao-panel"><h3>Company totals · Same reporting window <button class="ao-info cursor-interaction" aria-label="Company aggregation formula" data-tooltip="Sum ad-level spend and link clicks first. Company CPC = total spend ÷ total link clicks; never average individual ad CPCs.">ⓘ</button></h3><div id="ao-company-costs"></div></section><section class="ao-panel"><div class="ao-row"><h3>Cumulative spend · Selected ad <button class="ao-info cursor-interaction" aria-label="Cumulative spend formula" data-tooltip="Running sum of daily reported ad spend within this 7-day window. Not lifetime spend; not a budget multiplied by age.">ⓘ</button></h3><strong id="ao-cumulative-total"></strong></div><div class="ao-daychart" id="ao-spend-chart" style="height:110px;margin-top:12px" role="img" aria-label="Cumulative example spend from day 1 to day 7"></div><span class="ao-muted">MYR · Running total in the reporting window</span></section></div>
+    <div class="ao-footer"><span class="ao-muted">Requires advertiser permission or a supplied account export</span><button class="ao-button ao-primary cursor-interaction" data-choose="2 · Efficiency leaderboard">Choose efficiency leaderboard</button></div>
+  </main>
+</div>
+</section>
+<section data-variant="3 · Company creative studio" aria-label="Company creative studio concept" hidden>
+<div class="ao-app" aria-label="Company creative studio design">
+  <header class="ao-top"><div class="ao-brand"><i data-lucide="orbit" aria-hidden="true"></i> Ad Observatory</div><nav class="ao-nav" aria-label="Preview navigation"><span>Compare</span><span class="ao-current">Company / Nusa Pantry</span><span>Collections</span></nav></header>
+  <main class="ao-content">
+    <div class="ao-heading"><div><div class="ao-eyebrow">03 / Creative studio</div><h2>Understand the ad behind the number.</h2><p class="ao-muted">Fictional brand · Example public post observations</p></div><span class="ao-badge ao-demo">Illustrative data only</span></div>
+    <div class="ao-company-layout">
+      <aside class="ao-panel"><h3>Nusa Pantry</h3><p class="ao-muted">Choose an ad to inspect</p><button class="ao-ad-choice cursor-interaction" aria-pressed="true" data-creative="bundle"><strong>Breakfast bundle</strong><br><span class="ao-muted">42d source age · Image</span></button><button class="ao-ad-choice cursor-interaction" aria-pressed="false" data-creative="recipe"><strong>Five-minute breakfast</strong><br><span class="ao-muted">9d source age · Image</span></button><hr class="ao-rule"><h3>Comparison basis</h3><p class="ao-muted">Same post-age window<br>Day 0 through day 7<br>Daily counter snapshots</p><details class="ao-collapsed"><summary>Observation coverage</summary><p>These examples have eight snapshots each, including the day-0 baseline. Real records with missing snapshots would show gaps.</p></details></aside>
+      <div>
+        <section class="ao-panel"><div class="ao-row"><h3 id="ao-studio-name">Breakfast bundle</h3><span class="ao-badge" id="ao-studio-age">42d source age</span></div><div class="ao-grid2"><div class="ao-preview" style="height:180px"><i data-lucide="image" aria-hidden="true"></i>Full image / video preview area</div><div><span class="ao-muted">Ad copy · Fictional example</span><p class="ao-copy" id="ao-studio-copy">Breakfast, sorted. Build your morning bundle and save 15%.</p><div class="ao-inline-summary"><div><span class="ao-muted">First-week new likes</span><div class="ao-number" id="ao-first-week">210</div></div><div><span class="ao-muted">Likes per day <button class="ao-info cursor-interaction" aria-label="Public like velocity formula" data-tooltip="(Day-7 post likes − day-0 post likes) ÷ 7 elapsed days. Public post likes may combine organic and paid activity. This is not paid ad efficiency.">ⓘ</button></span><div class="ao-number" id="ao-like-rate">30</div></div></div></div></div></section>
+        <section class="ao-panel ao-space"><div class="ao-row"><h3>First 7 days · New post likes</h3><span class="ao-muted">Daily snapshot differences</span></div><div class="ao-legend"><span><b class="ao-dot"></b>Breakfast bundle</span><span><b class="ao-dot ao-dot-purple"></b>Five-minute breakfast</span></div><div class="ao-daychart" id="ao-daychart" role="img" aria-label="First-week new likes: Breakfast bundle 210, Five-minute breakfast 420. Daily bars use a shared 0 to 100 likes scale."></div><div class="ao-row"><span class="ao-muted">Post age · Day 1 to day 7</span><span class="ao-muted">Shared scale · 0–100 new likes/day</span></div><hr class="ao-rule"><div class="ao-inline-summary"><div><span class="ao-muted">Bundle · First-week pace</span><strong style="display:block;font-size:21px;margin-top:5px">30 likes/day</strong></div><div><span class="ao-muted">Recipe · First-week pace</span><strong style="display:block;font-size:21px;margin-top:5px">60 likes/day</strong></div></div></section>
+        <section class="ao-panel ao-space"><h3>Evidence &amp; interpretation</h3><div class="ao-grid2"><div><span class="ao-badge">Observed in example</span><p class="ao-copy">The recipe post accumulated twice as many new likes in its first week.</p></div><div><span class="ao-badge ao-demo">Hypothesis to test</span><p class="ao-copy">The recipe hook may attract more interest. Audience, organic reach and paid exposure are unmeasured.</p></div></div><details class="ao-collapsed"><summary>Why no efficiency score here?</summary><p>We have no impressions, clicks or spend. The chart describes public engagement pace; it cannot establish paid efficiency, revenue or profitability.</p></details></section>
+      </div>
+    </div>
+    <div class="ao-footer"><span class="ao-muted">Media → Copy → Matched-age charts → Evidence → Hypotheses</span><button class="ao-button ao-primary cursor-interaction" data-choose="3 · Company creative studio">Choose company creative studio</button></div>
+  </main>
+</div>
+</section>
+</div>
+<p class="ao-status" id="ao-choice-status" aria-live="polite"></p>
+<script>
+(() => {
+  const root = document.getElementById('ao-directions');
+  const records = [
+    {id:'bundle',name:'Breakfast bundle',brand:'Nusa Pantry',age:42,impressions:50000,clicks:1000,spend:800,copy:'Breakfast, sorted. Build your morning bundle and save 15%.'},
+    {id:'recipe',name:'Five-minute breakfast',brand:'Nusa Pantry',age:9,impressions:30000,clicks:900,spend:450,copy:'Five minutes. Three ingredients. One better morning.'},
+    {id:'starter',name:'Starter collection',brand:'Daybreak Kitchen',age:16,impressions:40000,clicks:800,spend:800,copy:'Find your new kitchen favourites. Start with our essentials collection.'},
+    {id:'family',name:'Family pantry pack',brand:'Daybreak Kitchen',age:65,impressions:60000,clicks:900,spend:1260,copy:'A pantry full of possibilities. Discover the family pack.'},
+    {id:'crunch',name:'The morning crunch',brand:'Nusa Pantry',age:12,impressions:20000,clicks:500,spend:300,copy:'A little crunch changes everything. Meet your new breakfast ritual.'},
+    {id:'weekend',name:'Weekend essentials',brand:'Daybreak Kitchen',age:28,impressions:35000,clicks:700,spend:840,copy:'Slow mornings start here. Shop our weekend essentials.'}
+  ];
+  const dailySpend={bundle:[95,110,125,100,120,135,115],recipe:[40,50,65,75,60,80,80],starter:[100,120,130,90,110,140,110],family:[150,180,160,190,200,180,200],crunch:[30,40,45,50,45,40,50],weekend:[100,110,120,130,140,120,120]};
+  const state = {rank:'cpc',selected:'bundle',creative:'bundle',company:null,choice:null};
+  const initial = window.openai?.widgetState?.modelContent;
+  if (initial && typeof initial === 'object') {
+    if (['cpc','ctr','age'].includes(initial.rank)) state.rank=initial.rank;
+    if (records.some(d=>d.id===initial.selected)) state.selected=initial.selected;
+    if (['bundle','recipe'].includes(initial.creative)) state.creative=initial.creative;
+  }
+  const money = n => 'RM'+n.toLocaleString('en-MY',{minimumFractionDigits:2,maximumFractionDigits:2});
+  const value = d => state.rank==='cpc' ? d.spend/d.clicks : state.rank==='ctr' ? d.clicks/d.impressions*100 : d.age;
+  function save() { window.openai?.setWidgetState?.({modelContent:{...state},privateContent:null}).catch(()=>{}); }
+  function renderRank() {
+    root.querySelector('#ao-rank').value=state.rank;
+    const sorted=[...records].sort((a,b)=>state.rank==='cpc'?value(a)-value(b):value(b)-value(a));
+    const max=Math.max(...records.map(value));
+    root.querySelector('#ao-score-header').textContent=state.rank==='cpc'?'CPC rank score':state.rank==='ctr'?'CTR rank score':'Not scored';
+    root.querySelector('#ao-leaderboard').innerHTML=sorted.map(d=>{
+      const tied=sorted.map((x,j)=>value(x)===value(d)?j:null).filter(x=>x!==null);
+      const rank=tied.reduce((a,b)=>a+b,0)/tied.length;
+      return `<tr class="${d.id===state.selected?'ao-selected':''}"><td><button class="ao-adlink cursor-interaction" data-ad="${d.id}">${d.name}</button><br><span class="ao-muted">${d.brand}</span></td><td>${d.age}d</td><td>${(d.clicks/d.impressions*100).toFixed(1)}%</td><td>${money(d.spend/d.clicks)}</td><td><span class="ao-score">${state.rank==='age'?'—':Math.round(100*(5-rank)/5)}</span></td></tr>`;
+    }).join('');
+    root.querySelector('#ao-rank-chart-title').textContent=state.rank==='cpc'?'Cost per link click · MYR':state.rank==='ctr'?'Link click-through rate · %':'Source age · Days';
+    root.querySelector('#ao-rank-bars').innerHTML=sorted.slice(0,3).map(d=>`<div class="ao-bar-row"><span>${d.name}</span><div class="ao-track"><div class="ao-fill ${d.brand==='Daybreak Kitchen'?'ao-fill-purple':''}" style="width:${value(d)/max*100}%"></div></div><span>${state.rank==='cpc'?value(d).toFixed(2):state.rank==='ctr'?value(d).toFixed(1)+'%':value(d)+'d'}</span></div>`).join('');
+    const d=records.find(x=>x.id===state.selected);
+    let cumulative=0;
+    root.querySelector('#ao-cumulative-total').textContent=money(d.spend);
+    root.querySelector('#ao-spend-chart').setAttribute('aria-label',d.name+' cumulative example spend: '+money(d.spend)+' across seven days');
+    root.querySelector('#ao-spend-chart').innerHTML=dailySpend[d.id].map((amount,i)=>{cumulative+=amount;return `<div class="ao-day"><div class="ao-daybar" style="height:${cumulative/d.spend*100}%;width:100%"></div><label>D${i+1}</label></div>`;}).join('');
+    root.querySelector('#ao-selected-name').textContent=d.name;
+    root.querySelector('#ao-selected-copy').textContent=d.copy;
+    root.querySelector('#ao-selected-metrics').innerHTML=`<div><span class="ao-muted">7d spend</span><strong>${money(d.spend)}</strong></div><div><span class="ao-muted">Avg / day</span><strong>${money(d.spend/7)}</strong></div><div><span class="ao-muted">7d link clicks</span><strong>${d.clicks.toLocaleString()}</strong></div><div><span class="ao-muted">7d impressions</span><strong>${d.impressions.toLocaleString()}</strong></div>`;
+  }
+  const companies=['Nusa Pantry','Daybreak Kitchen'];
+  root.querySelector('#ao-company-costs').innerHTML=companies.map(b=>{
+    const items=records.filter(d=>d.brand===b),spend=items.reduce((s,d)=>s+d.spend,0), clicks=items.reduce((s,d)=>s+d.clicks,0);
+    return `<div class="ao-row ao-smallgap"><span>${b}<br><span class="ao-muted">${money(spend)} spend · ${clicks.toLocaleString()} link clicks</span></span><strong>${money(spend/clicks)}<br><span class="ao-muted">per link click</span></strong></div>`;
+  }).join('<hr class="ao-rule">');
+  const likesA=[12,18,25,30,35,40,50],likesB=[30,40,50,60,70,75,95];
+  root.querySelector('#ao-daychart').innerHTML=likesA.map((v,i)=>`<div class="ao-day"><div class="ao-daybar" style="height:${v}%"></div><div class="ao-daybar purple" style="height:${likesB[i]}%"></div><label>D${i+1}</label></div>`).join('');
+  function renderStudio() {
+    const d=records.find(x=>x.id===state.creative),first=state.creative==='bundle';
+    root.querySelector('#ao-studio-name').textContent=d.name;
+    root.querySelector('#ao-studio-copy').textContent=d.copy;
+    root.querySelector('#ao-studio-age').textContent=d.age+'d source age';
+    root.querySelector('#ao-first-week').textContent=first?'210':'420';
+    root.querySelector('#ao-like-rate').textContent=first?'30':'60';
+    root.querySelectorAll('[data-creative]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.creative===state.creative)));
+  }
+  root.querySelector('#ao-rank').addEventListener('change',e=>{state.rank=e.target.value;renderRank();save();});
+  root.addEventListener('click',async e=>{
+    const ad=e.target.closest('[data-ad]');
+    if(ad){state.selected=ad.dataset.ad;renderRank();save();}
+    const creative=e.target.closest('[data-creative]');
+    if(creative){state.creative=creative.dataset.creative;renderStudio();save();}
+    const company=e.target.closest('[data-company]');
+    if(company){
+      state.company=company.dataset.company;
+      const graze=state.company==='graze';
+      const list=graze?[['Vanilla protein',32],['Granola variety',32],['Trial kit · 2945',3],['Mocha image',3],['Mocha video · 1399',3],['Trial kit · 7389',3],['Trial kit · 9516',3],['Mocha video · 3379',3]]:[['Pre-Merdeka history',27],['Nation building · 5882',7],['Occupation history',3],['Nation building · 0138',3],['Early 20th century',3]];
+      root.querySelector('.ao-company-detail').hidden=false;
+      root.querySelector('.ao-company-detail-title').textContent=(graze?'Amazin’ Graze':'JOBBIE')+' · All saved ads';
+      root.querySelector('.ao-company-bars').innerHTML=list.map(([label,age])=>`<div class="ao-bar-row"><span>${label}</span><div class="ao-track"><div class="ao-fill ${graze?'':'ao-fill-purple'}" style="width:${age/32*100}%"></div></div><span>${age}d</span></div>`).join('');
+      save();
+    }
+    if(e.target.closest('[data-close-company]')){root.querySelector('.ao-company-detail').hidden=true;state.company=null;save();}
+    const choice=e.target.closest('[data-choose]');
+    if(choice){
+      state.choice=choice.dataset.choose;save();
+      root.querySelector('#ao-choice-status').textContent='Selected: '+state.choice;
+      if(window.openai?.sendFollowUpMessage){try{await window.openai.sendFollowUpMessage({prompt:'I choose '+state.choice+' as the main direction for Ad Observatory. Build it with honest data availability, original ad media and source links, business comparison and company drill-downs, and metric formula explanations. Keep demonstration values out of my real records.',title:'Choose dashboard direction'});}catch{root.querySelector('#ao-choice-status').textContent='Selected: '+state.choice+'. Tell me your choice in the chat to continue.';}}
+    }
+  });
+  window.addEventListener('openai:set_globals',event=>{
+    const s=event.detail?.globals?.widgetState?.modelContent;
+    if(!s)return;
+    if(['cpc','ctr','age'].includes(s.rank))state.rank=s.rank;
+    if(records.some(d=>d.id===s.selected))state.selected=s.selected;
+    if(['bundle','recipe'].includes(s.creative))state.creative=s.creative;
+    renderRank();renderStudio();
+  });
+  renderRank();renderStudio();
+  if(globalThis.Tweak){root.querySelectorAll('.ao-app').forEach(app=>{const design={corners:13,spacing:19};const tweak=new Tweak({container:app,onChange:()=>app.querySelectorAll('.ao-panel').forEach(p=>{p.style.borderRadius=design.corners+'px';p.style.padding=design.spacing+'px';})});tweak.addSlider(design,'corners',{label:'Panel corners',min:0,max:22,unit:'px'});tweak.addSlider(design,'spacing',{label:'Panel spacing',min:12,max:26,unit:'px'});});}
+})();
+</script>
+</div>

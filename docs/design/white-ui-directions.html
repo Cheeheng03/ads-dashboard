@@ -1,0 +1,114 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650&family=Lato:wght@400;700&display=swap">
+<div id="ao-white-directions">
+<div class="viz-carousel" aria-label="Ad Observatory white interface directions">
+<section data-variant="1 · Linear workspace" aria-label="Linear inspired workspace"><div class="ao-mock ao-linear" id="ao-direction-one" aria-label="Linear workspace design"></div></section>
+<section data-variant="2 · Metabase report" aria-label="Metabase inspired report" hidden><div class="ao-mock ao-report" id="ao-direction-two" aria-label="Metabase report design"></div></section>
+<section data-variant="3 · Plausible overview" aria-label="Plausible inspired overview" hidden><div class="ao-mock ao-simple" id="ao-direction-three" aria-label="Plausible overview design"></div></section>
+</div>
+</div>
+<style>
+#ao-white-directions .ao-mock{--ao-accent:#4F5BD5;--ao-ink:#202124;--ao-muted:#64676F;--ao-line:#E7E8EC;--ao-soft:#F7F7F8;--ao-radius:6px;color-scheme:light;background:#fff;color:var(--ao-ink);font:13px/1.5 Inter,Arial,sans-serif;min-height:820px;box-sizing:border-box;text-align:left}
+#ao-white-directions .ao-mock *{box-sizing:border-box}
+#ao-white-directions .ao-mock h1,#ao-white-directions .ao-mock h2,#ao-white-directions .ao-mock h3,#ao-white-directions .ao-mock p{margin:0;color:inherit;font-family:inherit}
+#ao-white-directions .ao-mock h1{font-size:25px;font-weight:600;letter-spacing:-.6px;line-height:1.3}
+#ao-white-directions .ao-mock h2{font-size:14px;font-weight:600;line-height:1.4}
+#ao-white-directions .ao-mock h3{font-size:14px;font-weight:500}
+#ao-white-directions .ao-mock button,#ao-white-directions .ao-mock input{font:inherit;color:inherit;background:#fff;border:1px solid var(--ao-line);border-radius:var(--ao-radius);padding:7px 10px;max-width:100%}
+#ao-white-directions .ao-mock button:hover{background:var(--ao-soft)}
+#ao-white-directions .ao-mock a{color:var(--ao-accent);text-decoration:none}
+#ao-white-directions .ao-mock a:hover{text-decoration:underline}
+#ao-white-directions .ao-mock small{font-size:11px;line-height:1.5;color:var(--ao-muted);display:block}
+#ao-white-directions .ao-mock .ao-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 22px;border-bottom:1px solid var(--ao-line);flex-wrap:wrap}
+#ao-white-directions .ao-brand{font-weight:600;letter-spacing:-.3px}
+#ao-white-directions .ao-demo{font-size:11px;color:var(--ao-muted)}
+#ao-white-directions .ao-shell{display:grid;grid-template-columns:154px minmax(0,1fr)}
+#ao-white-directions .ao-side{background:var(--ao-soft);border-right:1px solid var(--ao-line);padding:24px 12px}
+#ao-white-directions .ao-side span{display:block;padding:8px 12px;margin:3px 0;border-radius:4px;color:var(--ao-muted)}
+#ao-white-directions .ao-side span.ao-current{color:var(--ao-ink);background:#EDEEF1;font-weight:500}
+#ao-white-directions .ao-side small{padding:0 12px;margin:0 0 10px}
+#ao-white-directions .ao-side .ao-space{margin-top:32px}
+#ao-white-directions .ao-content{padding:24px;min-width:0}
+#ao-white-directions .ao-heading{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 0 22px}
+#ao-white-directions .ao-heading small{margin-top:5px}
+#ao-white-directions .ao-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#ao-white-directions .ao-date{border:1px solid var(--ao-line);border-radius:var(--ao-radius);padding:7px 10px;background:#fff;white-space:nowrap;font-size:12px}
+#ao-white-directions .ao-summary{display:grid;grid-template-columns:1.55fr 1fr 1fr;border-top:1px solid var(--ao-line);border-bottom:1px solid var(--ao-line);margin-bottom:22px}
+#ao-white-directions .ao-summary>div{padding:15px 12px 15px 0;min-width:0}
+#ao-white-directions .ao-summary>div+div{border-left:1px solid var(--ao-line);padding-left:18px}
+#ao-white-directions .ao-summary strong{display:block;font-size:23px;letter-spacing:-.5px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;margin:4px 0}
+#ao-white-directions .ao-label{font-size:12px;color:var(--ao-muted)}
+#ao-white-directions .ao-mock .ao-tag{display:inline-block;font-size:10px;letter-spacing:.05em;padding:2px 5px;color:#865911;background:#FFF5DD;border-radius:3px;margin-left:5px;vertical-align:middle}
+#ao-white-directions .ao-chart-heading{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+#ao-white-directions .ao-chart{height:180px;width:100%;display:block;overflow:visible}
+#ao-white-directions .ao-chart text{font:11px Inter,Arial,sans-serif;fill:var(--ao-muted)}
+#ao-white-directions .ao-note{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;color:var(--ao-muted);font-size:11px;margin-top:5px}
+#ao-white-directions .ao-ad-section{margin-top:26px}
+#ao-white-directions .ao-ad-section input{width:155px;padding:5px 9px;font-size:12px}
+#ao-white-directions .ao-grid-head,#ao-white-directions .ao-ad-row{display:grid;grid-template-columns:minmax(150px,1fr) 76px 98px 64px;gap:10px;align-items:center}
+#ao-white-directions .ao-grid-head{font-size:11px;color:var(--ao-muted);padding:10px 0;border-bottom:1px solid var(--ao-line)}
+#ao-white-directions .ao-ad-row{padding:12px 0;border-bottom:1px solid var(--ao-line);font-variant-numeric:tabular-nums}
+#ao-white-directions .ao-ad-name{display:flex;gap:10px;align-items:center;min-width:0}
+#ao-white-directions .ao-mini{width:36px;height:40px;border-radius:3px;background:#E9EEE5;display:flex;align-items:center;justify-content:center;font-size:10px;color:#384C37;flex-shrink:0}
+#ao-white-directions .ao-ad-name button{border:0!important;background:transparent!important;text-align:left;padding:0;font-weight:500;font-size:12px}
+#ao-white-directions .ao-end{text-align:right}
+#ao-white-directions .ao-detail{padding:16px 0;display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;border-bottom:1px solid var(--ao-line)}
+#ao-white-directions .ao-detail[hidden]{display:none}
+#ao-white-directions .ao-poster{aspect-ratio:1;background:#E9EEE5;color:#384C37;padding:14px;display:flex;flex-direction:column;justify-content:space-between;font:600 17px/1.2 Inter,Arial,sans-serif;border-radius:4px}
+#ao-white-directions .ao-poster small{color:#384C37;font-size:9px;font-weight:400}
+#ao-white-directions .ao-detail p{font-size:12px;margin:6px 0}
+#ao-white-directions .ao-footer{margin-top:24px;padding-top:12px;border-top:1px solid var(--ao-line);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--ao-muted);font-size:11px}
+#ao-white-directions .ao-swatches{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+#ao-white-directions .ao-swatch{display:inline-block;width:11px;height:11px;border:1px solid #DADCE1;vertical-align:middle;margin-right:3px;border-radius:2px}
+#ao-white-directions .ao-report{--ao-accent:#327CB4;--ao-ink:#26323B;--ao-muted:#5F6B75;--ao-line:#DFE6EB;--ao-soft:#F7F9FB;font-family:Lato,Arial,sans-serif;--ao-radius:8px}
+#ao-white-directions .ao-report .ao-content{padding:26px 32px}
+#ao-white-directions .ao-report .ao-summary{border:0;gap:14px}
+#ao-white-directions .ao-report .ao-summary>div{border:1px solid var(--ao-line);border-radius:var(--ao-radius);padding:16px 20px}
+#ao-white-directions .ao-report .ao-panels{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+#ao-white-directions .ao-report .ao-panel{border:1px solid var(--ao-line);border-radius:var(--ao-radius);padding:18px;min-width:0}
+#ao-white-directions .ao-report .ao-ad-section{border:1px solid var(--ao-line);border-radius:var(--ao-radius);padding:18px}
+#ao-white-directions .ao-age{display:grid;grid-template-columns:65px 1fr 40px;align-items:center;gap:10px;font-size:12px;margin:24px 0}
+#ao-white-directions .ao-age-track{height:8px;background:var(--ao-soft)}
+#ao-white-directions .ao-age-track span{display:block;height:8px;background:var(--ao-accent)}
+#ao-white-directions .ao-simple{--ao-accent:#6253D9;--ao-ink:#20212A;--ao-muted:#646776;--ao-line:#E6E7ED;--ao-soft:#F7F7FA;--ao-radius:6px}
+#ao-white-directions .ao-simple .ao-content{padding:26px 38px}
+#ao-white-directions .ao-simple .ao-chart{height:210px}
+#ao-white-directions .ao-simple .ao-summary{margin-bottom:20px}
+#ao-white-directions .ao-simple .ao-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:14px}
+#ao-white-directions .ao-gallery article{min-width:0;border:1px solid var(--ao-line);border-radius:var(--ao-radius);overflow:hidden}
+#ao-white-directions .ao-gallery .ao-poster{aspect-ratio:auto;height:90px;border-radius:0;padding:12px 16px;font-size:19px}
+#ao-white-directions .ao-gallery .ao-gallery-text{padding:12px}
+#ao-white-directions .ao-gallery button{border:0;background:transparent;padding:0;text-align:left;font-weight:500}
+#ao-white-directions .ao-gallery p{margin-top:8px;font-size:12px}
+#ao-white-directions .ao-simple .ao-top{padding:16px 38px}
+#ao-white-directions .ao-nav-inline{display:flex;gap:20px;font-size:12px;color:var(--ao-muted)}
+@media(max-width:750px){#ao-white-directions .ao-shell{grid-template-columns:1fr}#ao-white-directions .ao-side{display:none}#ao-white-directions .ao-report .ao-content,#ao-white-directions .ao-simple .ao-content,#ao-white-directions .ao-content{padding:20px}#ao-white-directions .ao-mock{min-height:890px}}
+@media(max-width:510px){#ao-white-directions .ao-mock{min-height:1250px}#ao-white-directions .ao-summary{grid-template-columns:1fr}#ao-white-directions .ao-summary>div+div{border-left:0;border-top:1px solid var(--ao-line);padding-left:0}#ao-white-directions .ao-summary strong{font-size:22px}#ao-white-directions .ao-report .ao-panels{grid-template-columns:1fr}#ao-white-directions .ao-report .ao-summary>div{padding:12px}#ao-white-directions .ao-grid-head,#ao-white-directions .ao-ad-row{grid-template-columns:minmax(100px,1fr) 52px 60px}#ao-white-directions .ao-hide-mobile{display:none}#ao-white-directions .ao-simple .ao-gallery{grid-template-columns:1fr}#ao-white-directions .ao-gallery article{display:grid;grid-template-columns:90px 1fr}#ao-white-directions .ao-gallery .ao-poster{height:100%;font-size:14px}#ao-white-directions .ao-nav-inline{gap:12px}#ao-white-directions .ao-simple .ao-top{padding:15px 20px}#ao-white-directions .ao-detail{grid-template-columns:80px 1fr}#ao-white-directions .ao-poster{font-size:13px}}
+@media(pointer:coarse){#ao-white-directions .ao-mock button{min-height:44px}#ao-white-directions .ao-mock input{font-size:16px;min-height:44px}}
+</style>
+<script>
+(()=>{
+const root=document.getElementById('ao-white-directions');
+const ads=[{name:'Daily breakfast',age:45,ctr:'1.2%',clicks:120,impressions:10000,copy:'Make mornings simple. A bowl of crunchy granola, ready in a minute.',poster:'A better\nmorning.'},{name:'Snack bundle',age:28,ctr:'0.8%',clicks:64,impressions:8000,copy:'Your favourite snacks, packed together. Find your next afternoon favourite.',poster:'Good things\ncome together.'},{name:'Protein blend',age:14,ctr:'Unknown',clicks:null,impressions:null,copy:'Meet your everyday protein blend. Blend, shake and enjoy.',poster:'Made for\nyour day.'}];
+const info='<span class="ao-tag">SCENARIO</span>';
+function summary(){return `<div class="ao-summary"><div><div class="ao-label">Estimated window spend ${info}</div><strong>RM1,400–4,200</strong><small>Assumed pool · RM100–300 / day</small></div><div><div class="ao-label">Saved ads</div><strong>3</strong><small>3 last observed active</small></div><div><div class="ao-label">Oldest ad</div><strong>45 <span style="font-size:14px;font-weight:400">days</span></strong><small>Calendar age · not paid runtime</small></div></div>`}
+function heading(){return `<div class="ao-heading"><div><small>Companies / Sample Foods</small><h1>Sample Foods</h1><small>Malaysia · Food & beverage</small></div><div class="ao-controls"><span class="ao-date">21 Sep – 4 Oct 2026</span></div></div>`}
+function graph(){return `<div class="ao-chart-heading"><h2>Cumulative spending ${info}</h2><small>MYR · 14 days</small></div><svg class="ao-chart" role="img" aria-label="Illustrative cumulative spending, day 1 RM100 to 300, day 14 RM1400 to 4200"></svg><div class="ao-note"><span>Shaded band = assumed low to high</span><span>Budget scenario</span></div>`}
+function rows(){return `<div class="ao-grid-head"><span>Ad creative</span><span class="ao-end">Age</span><span class="ao-end ao-hide-mobile">Paid clicks</span><span class="ao-end">CTR</span></div><div class="ao-rows">${ads.map((a,i)=>`<div class="ao-ad-row" data-name="${a.name.toLowerCase()}"><div class="ao-ad-name"><div class="ao-mini">${['OATS','SNACK','BLEND'][i]}</div><div><button class="cursor-interaction" data-ad="${i}">${a.name}</button><small>Image · sample creative</small></div></div><span class="ao-end">${a.age}d</span><span class="ao-end ao-hide-mobile">${a.clicks??'—'}</span><span class="ao-end">${a.ctr==='Unknown'?'—':a.ctr}</span></div>`).join('')}</div>`}
+function table(){return `<div class="ao-ad-section"><div class="ao-chart-heading"><h2>Ads</h2><input aria-label="Search sample ads" placeholder="Search ads"></div>${rows()}<small style="margin-top:10px">Click an ad name to inspect its copy and evidence.</small><div class="ao-detail" aria-live="polite" hidden></div></div>`}
+function footer(font,hex){return `<div class="ao-footer"><span>${font} · ${hex==='327CB4'?'8':'6'}px corners · white canvas</span><div class="ao-swatches"><span><i class="ao-swatch" style="background:#fff"></i>#FFFFFF</span><span data-accent-label><i class="ao-swatch" style="background:#${hex}"></i>#${hex}</span></div></div>`}
+const mock1=root.querySelector('#ao-direction-one');mock1.innerHTML=`<div class="ao-top"><span class="ao-brand">Ad Observatory</span><span class="ao-demo">DESIGN PREVIEW · ALL DATA FICTIONAL</span></div><div class="ao-shell"><aside class="ao-side"><small>Workspace</small><span class="ao-current">Companies</span><span>Compare</span><span>Saved ads</span><small class="ao-space">Collection</small><span>Malaysia</span><span>Import & settings</span></aside><main class="ao-content">${heading()}${summary()}${graph()}${table()}${footer('Inter + Inter Display proposed','4F5BD5')}</main></div>`;
+const mock2=root.querySelector('#ao-direction-two');mock2.innerHTML=`<div class="ao-top"><span class="ao-brand">Ad Observatory</span><span class="ao-nav-inline">Companies　 /　 Compare　 /　 Saved ads</span><span class="ao-demo">FICTIONAL PREVIEW DATA</span></div><main class="ao-content">${heading()}${summary()}<div class="ao-panels"><div class="ao-panel">${graph()}</div><div class="ao-panel"><div class="ao-chart-heading"><h2>Longest running creatives</h2></div><small>Calendar age at 4 October · days</small>${ads.map(a=>`<div class="ao-age"><span>${a.name.split(' ')[0]}</span><div class="ao-age-track"><span style="width:${a.age/45*100}%"></span></div><span class="ao-end">${a.age}d</span></div>`).join('')}<small>Age does not establish performance</small></div></div>${table()}${footer('Lato','327CB4')}</main>`;
+const mock3=root.querySelector('#ao-direction-three');mock3.innerHTML=`<div class="ao-top"><span class="ao-brand">Ad Observatory</span><div class="ao-nav-inline"><span>Companies</span><span>Compare</span><span>Saved ads</span></div></div><main class="ao-content">${heading()}<small style="margin-bottom:14px">DESIGN PREVIEW · ALL DATA FICTIONAL</small>${summary()}${graph()}<div class="ao-ad-section"><div class="ao-chart-heading"><h2>Explore the ads</h2><small>Oldest first</small></div><div class="ao-gallery">${ads.map((a,i)=>`<article><div class="ao-poster">${a.poster.replace('\n','<br>')}<small>SAMPLE CREATIVE</small></div><div class="ao-gallery-text"><button class="cursor-interaction" data-ad="${i}">${a.name}</button><small>${a.age} days old · image</small><p>Paid CTR <strong>${a.ctr}</strong></p></div></article>`).join('')}</div><div class="ao-detail" aria-live="polite" hidden></div></div>${footer('Inter proposed','6253D9')}</main>`;
+let selected={};
+function detail(mock,index){const ad=ads[index];if(!ad)return;const box=mock.querySelector('.ao-detail');box.hidden=false;box.innerHTML=`<div class="ao-poster">${ad.poster.replace('\n','<br>')}<small>SAMPLE CREATIVE</small></div><div><h3>${ad.name}</h3><p>${ad.copy}</p><small>${ad.clicks===null?'No paid response evidence in this sample.':`Fictional report: ${ad.clicks} link clicks ÷ ${ad.impressions.toLocaleString()} impressions × 100 = ${ad.ctr}`}</small><small style="margin-top:8px">In the app: original ad link, source date and saved evidence</small><button class="cursor-interaction" data-close style="margin-top:8px;padding:3px 9px">Close detail</button></div>`;selected[mock.id]=index;}
+for(const mock of [mock1,mock2,mock3]){
+ mock.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.hasAttribute('data-ad'))detail(mock,Number(b.dataset.ad));if(b.hasAttribute('data-close')){mock.querySelector('.ao-detail').hidden=true;delete selected[mock.id]}if(globalThis.openai?.setWidgetState)window.openai.setWidgetState({privateContent:{selected}}).catch(()=>{});});
+ const search=mock.querySelector('input');if(search)search.addEventListener('input',()=>{mock.querySelectorAll('.ao-ad-row').forEach(r=>r.hidden=!r.dataset.name.includes(search.value.toLowerCase()));mock.querySelectorAll('.ao-ad-row').forEach(r=>r.style.display=r.hidden?'none':'');});
+ const settings={radius:mock===mock2?8:6,accent:mock===mock1?'#4F5BD5':mock===mock2?'#327CB4':'#6253D9'};
+ if(globalThis.Tweak){const tweak=new Tweak({container:mock,onChange:()=>{mock.style.setProperty('--ao-radius',settings.radius+'px');mock.style.setProperty('--ao-accent',settings.accent);mock.querySelector('[data-accent-label]').innerHTML='<i class="ao-swatch" style="background:'+settings.accent+'"></i>'+settings.accent}});tweak.addSlider(settings,'radius',{label:'Corner radius',min:0,max:12,unit:'px'});tweak.addColorPicker(settings,'accent',{label:'Accent',reference:'--ao-accent'});}
+}
+function restore(s){if(!s?.privateContent?.selected)return;selected=s.privateContent.selected;for(const [id,n]of Object.entries(selected)){const m=root.querySelector('#'+id);if(m)detail(m,n)}}restore(globalThis.openai?.widgetState);window.addEventListener('openai:set_globals',e=>restore(e.detail?.globals?.widgetState));
+function draw(svg){const w=svg.clientWidth;if(w<100)return;const h=svg.clientHeight,left=48,right=16,top=18,bottom=h-28,x=d=>left+(d-1)/13*(w-left-right),y=v=>bottom-v/4500*(bottom-top);svg.setAttribute('viewBox',`0 0 ${w} ${h}`);let html='';[0,2000,4000].forEach(v=>{html+=`<line x1="${left}" y1="${y(v)}" x2="${w-right}" y2="${y(v)}" stroke="var(--ao-line)"/><text x="${left-8}" y="${y(v)+4}" text-anchor="end">${v===0?'0':v/1000+'k'}</text>`});const low=Array.from({length:14},(_,i)=>[x(i+1),y((i+1)*100)]),high=Array.from({length:14},(_,i)=>[x(i+1),y((i+1)*300)]);html+=`<polygon points="${[...high,...low.slice().reverse()].map(a=>a.join(',')).join(' ')}" fill="var(--ao-accent)" opacity=".09"/><polyline points="${high.map(a=>a.join(',')).join(' ')}" fill="none" stroke="var(--ao-accent)" stroke-width="2"/><polyline points="${low.map(a=>a.join(',')).join(' ')}" fill="none" stroke="var(--ao-accent)" opacity=".7" stroke-dasharray="4 3" stroke-width="1.5"/>`;[1,7,14].forEach((day,i)=>{html+=`<text x="${x(day)}" y="${h-7}" text-anchor="${i===0?'start':i===2?'end':'middle'}">${['21 Sep','27 Sep','4 Oct'][i]}</text>`});svg.innerHTML=html;}
+const observer=new ResizeObserver(es=>es.forEach(e=>draw(e.target)));root.querySelectorAll('.ao-chart').forEach(svg=>{draw(svg);observer.observe(svg)});
+})();
+</script>

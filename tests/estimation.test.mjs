@@ -1,0 +1,74 @@
+import assert from 'node:assert/strict';
+import {analysisSchema,assumptionSchema,analyzeAds,blankEvidence,evidenceEstimate,illustrativeAssumptions,measuredPerformance} from '../app/estimation-model.ts';
+const A={...illustrativeAssumptions};
+const ad=(id,start='2026-09-01',status='Active')=>({id,start_date:start,status});
+const evidence=(id='a',extra={})=>({...blankEvidence(id,'2026-09-01','2026-09-30'),source:'Test report',scope:'MY traffic',...extra});
+const model={version:1,from:'2026-09-01',to:'2026-09-30',basis:'budget',assumptions:A,evidence:[]};
+let r=analyzeAds([ad('a'),ad('b')],model);
+assert.deepEqual(r.total,{low:3000,high:9000});
+assert.deepEqual(r.rows[0].spend,{low:1500,high:4500});
+assert.deepEqual(r.average,{low:100,high:300});
+assert.equal(r.rows[0].actual.ctr,null,'modeled clicks cannot manufacture measured CTR');
+assert.deepEqual(r.rows[0].modeledClicks,{low:375,high:9000});
+assert.deepEqual(analyzeAds([ad('a')],model).total,r.total,'more ads share the same pool');
+r=analyzeAds([ad('a'),ad('b','2026-09-16'),ad('c','2026-09-01','Inactive'),ad('d','2026-02-30')],model);
+assert.deepEqual(r.total,{low:3000,high:9000});
+assert.deepEqual(r.rows[0].spend,{low:2250,high:6750});
+assert.deepEqual(r.rows[1].spend,{low:750,high:2250});
+assert.equal(r.rows[2].spend,null);assert.equal(r.rows[3].spend,null);
+assert.equal(analyzeAds([ad('a','2026-10-01')],model).total,null);
+assert.equal(analyzeAds([ad('a')],{...model,assumptions:{...A,dailyLow:null,dailyHigh:null}}).total,null);
+assert.deepEqual(analyzeAds([ad('a')],{...model,assumptions:{...A,dailyLow:0,dailyHigh:0}}).total,{low:0,high:0});
+let e=evidence('a',{impressionsLow:100000,impressionsHigh:100000,paidClicks:1000,spend:1500,visits:800,conversions:20,engagementStart:100,engagementEnd:158});
+assert.deepEqual(evidenceEstimate(e,A).spend,{low:1500,high:1500});
+assert.deepEqual(evidenceEstimate({...e,spend:null},A).spend,{low:1000,high:2000});
+assert.deepEqual(evidenceEstimate(evidence('a',{reach:10000}),A).spend,{low:150,high:600});
+assert.deepEqual(evidenceEstimate(evidence('a',{paidClicks:1000}),A).spend,{low:500,high:2000});
+assert.equal(evidenceEstimate(null,A).spend,null);
+assert.deepEqual(measuredPerformance(e),{ctr:1,cpc:1.5,cpa:75,cvr:2.5,engagementPerDay:2,engagementDelta:58});
+assert.equal(measuredPerformance({...e,impressionsHigh:200000}).ctr,null,'ranges do not create exact CTR');
+assert.equal(measuredPerformance({...e,paidClicks:0}).cpc,null);
+assert.equal(measuredPerformance({...e,paidClicks:0}).ctr,0);
+assert.equal(measuredPerformance({...e,from:e.to}).engagementPerDay,null);
+assert.equal(measuredPerformance({...e,engagementEnd:71}).engagementPerDay,-1,'counter decreases remain net changes');
+r=analyzeAds([ad('a')],{...model,basis:'evidence',evidence:[e]});
+assert.deepEqual(r.total,{low:1500,high:1500});assert.equal(r.rows[0].reported,true);
+for(const bad of [{...e,currency:'USD'},{...e,to:'2026-09-29'}])assert.equal(analyzeAds([ad('a')],{...model,basis:'evidence',evidence:[bad]}).total,null);
+r=analyzeAds([ad('a'),ad('b')],{...model,basis:'evidence',evidence:[e,evidence('b',{spend:200,scope:'SG traffic'})]});
+assert.equal(r.compatible,false);assert.equal(r.total,null);
+assert.equal(assumptionSchema.safeParse({...A,cpmLow:20,cpmHigh:10}).success,false);
+assert.equal(assumptionSchema.safeParse({...A,ctrHigh:101}).success,false);
+assert.equal(assumptionSchema.safeParse({...A,cpmLow:0}).success,false);
+assert.equal(analysisSchema.safeParse({...model,evidence:[e,{...e}]}).success,false);
+assert.equal(analysisSchema.safeParse({...model,from:'2026-02-30'}).success,false);
+console.log('PASS: shared-budget conservation, date eligibility, inactive/invalid ads, zero vs missing, evidence methods, scope/currency isolation, measured CTR guardrails, negative engagement changes and validation');
+
+// Saved-start charts must exclude bad dates without turning absence into activity.
+const {savedAdCharts}=await import('../app/ad-chart-model.ts');
+const charts=savedAdCharts([
+ ad('old','2026-08-01','Inactive'),ad('first','2026-09-01'),ad('last','2026-09-30'),
+ ad('same-day','2026-09-30'),ad('future','2026-10-01'),ad('invalid','2026-02-30'),ad('missing',''),
+],'2026-09-01','2026-09-30');
+assert.equal(charts.known,4);assert.equal(charts.unknown,3);
+assert.equal(charts.ages[0].ad.id,'old','inactive ad dates are not discarded or relabeled as paid runtime');
+assert.equal(charts.ages.at(-1).age,0,'same-day ads have zero age, not missing age');
+assert.equal(charts.started,3,'both endpoints are included; starts before the window are excluded');
+assert.deepEqual(charts.starts.map(b=>b.count),[1,0,0,0,2]);
+assert.equal(charts.starts[0].from,'2026-09-01','clip the first partial week to the selected window');
+assert.equal(charts.starts.at(-1).to,'2026-09-30');
+const month=savedAdCharts([ad('a','2026-09-30'),ad('b','2026-10-01')],'2026-09-30','2026-10-01','month');
+assert.deepEqual(month.starts.map(b=>[b.key,b.count]),[['2026-09-01',1],['2026-10-01',1]]);
+assert.equal(savedAdCharts([],'2026-09-01','2026-09-30').starts.length,5,'empty collection preserves the selected calendar axis');
+assert.deepEqual(savedAdCharts([ad('a')],'invalid','2026-09-30'),{ages:[],starts:[],known:0,unknown:1,started:0});
+console.log('PASS: source-age ordering, inactive/same-day/future/invalid dates, inclusive launch windows, zero saved starts, partial weeks and month boundaries');
+
+const {savedStartCalendar,calendarDate,calendarDateKey}=await import('../app/ad-chart-model.ts');
+const cal=savedStartCalendar([ad('leap','2024-02-29'),ad('march','2024-03-01'),ad('before','2024-02-27'),ad('bad','2024-02-30'),ad('after','2024-03-02')],'2024-02-28','2024-03-01');
+assert.deepEqual(cal.months,['2024-02','2024-03']);
+assert.deepEqual(cal.dates,['2024-02-28','2024-02-29','2024-03-01']);
+assert.deepEqual(Object.keys(cal.byDate).sort(),['2024-02-29','2024-03-01']);
+assert.equal(cal.byDate['2024-02-29'][0].id,'leap');
+assert.equal(calendarDateKey(calendarDate('2024-02-29')),'2024-02-29');
+assert.equal(calendarDateKey(calendarDate('2026-12-31')),'2026-12-31');
+assert.deepEqual(savedStartCalendar([],'2026-12-31','2027-01-01').months,['2026-12','2027-01']);
+console.log('PASS: calendar leap days, exact-date records, selected-window clipping, month/year boundaries and civil-date round trips');

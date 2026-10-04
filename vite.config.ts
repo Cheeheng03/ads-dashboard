@@ -55,7 +55,8 @@ export default defineConfig(async ({ command }) => {
     server: {
       ...(managedLinux
         ? { host: "0.0.0.0", allowedHosts: ["terminal.local"] }
-        : {}),
+        : { host: "127.0.0.1" }),
+      fs: { deny: [".env", ".env.*", "**/.dev.vars*", "*.{crt,pem}", "**/.git/**", "**/.wrangler/**", "**/.sites-runtime/**", "**/*.{sqlite,sqlite3,db}", "**/*.{sqlite,sqlite3,db}-*"] },
       ...(isCodexSeatbeltSandbox
         ? { watch: { useFsEvents: false, usePolling: true } }
         : {}),

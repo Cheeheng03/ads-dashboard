@@ -5,3 +5,18 @@ export const observations=sqliteTable('observations',{id:text('id').primaryKey()
 export const activity=sqliteTable('activity',{id:text('id').primaryKey(),owner:text('owner').notNull(),message:text('message').notNull(),created_at:text('created_at').notNull()},t=>[index('activity_owner_date').on(t.owner,t.created_at)]);
 
 export const performance=sqliteTable('performance',{id:text('id').primaryKey(),owner:text('owner').notNull(),company_id:text('company_id').notNull(),account_id:text('account_id').notNull(),ad_id:text('ad_id').notNull(),ad_name:text('ad_name').notNull(),date:text('date').notNull(),currency:text('currency').notNull(),attribution:text('attribution').notNull(),source:text('source').notNull(),imported_at:text('imported_at').notNull(),spend:real('spend'),impressions:real('impressions'),reach:real('reach'),clicks:real('clicks'),link_clicks:real('link_clicks'),landing_page_views:real('landing_page_views'),add_to_cart:real('add_to_cart'),checkouts:real('checkouts'),purchases:real('purchases'),revenue:real('revenue'),leads:real('leads'),video_plays:real('video_plays')},t=>[index('performance_owner_company').on(t.owner,t.company_id),uniqueIndex('performance_daily_scope').on(t.owner,t.account_id,t.ad_id,t.date,t.currency,t.attribution)]);
+
+export const analysisModels=sqliteTable('analysis_models',{id:text('id').primaryKey(),owner:text('owner').notNull(),company_id:text('company_id').notNull(),model_json:text('model_json').notNull(),updated_at:text('updated_at').notNull()},t=>[uniqueIndex('analysis_models_owner_company').on(t.owner,t.company_id)]);
+
+export const metaConnections=sqliteTable('meta_connections',{
+  owner:text('owner').primaryKey(),
+  app_id:text('app_id').notNull(),
+  account_id:text('account_id').notNull(),
+  api_version:text('api_version').notNull(),
+  encrypted_credentials:text('encrypted_credentials').notNull(),
+  has_app_secret:integer('has_app_secret').notNull().default(0),
+  revision:text('revision').notNull(),
+  updated_at:text('updated_at').notNull(),
+  tested_at:text('tested_at'),
+  test_result:text('test_result'),
+});

@@ -1,6 +1,7 @@
 import {database} from '@/db/raw';
 import {getChatGPTUser} from '@/app/chatgpt-auth';
 import {z} from 'zod';
+import {analysisSchema} from '@/app/estimation-model';
 import {metrics} from '@/app/analytics-model';
 export const dynamic='force-dynamic';
 const str=(max=4000)=>z.string().trim().max(max).default('');
@@ -10,13 +11,22 @@ const num=z.number().finite().nonnegative().nullable().default(null);
 const companySchema=z.object({id:z.string().optional(),name:z.string().trim().min(1).max(120),domain:url,page_id:str(80),market:z.string().regex(/^[A-Z]{2}$/).default('MY'),category:str(100),notes:str(10000)});
 const adSchema=z.object({id:z.string().optional(),company_id:z.string().min(1),library_id:z.string().trim().max(100).nullable().default(null),title:z.string().trim().min(1).max(200),body:str(20000),format:z.enum(['Image','Video','Carousel','Other']).default('Image'),status:z.enum(['Active','Inactive','Unknown']).default('Unknown'),start_date:date,source_url:url,landing_url:url,image_url:url,market:z.string().regex(/^[A-Z]{2}$/).default('MY'),hook:str(2000),angle:str(300),notes:str(20000),hypothesis:str(10000),board:str(100),pinned:z.number().int().min(0).max(1).default(0),reach:z.number().int().nonnegative().nullable().default(null),spend:num,currency:z.string().regex(/^[A-Z]{3}$/).default('MYR'),metric_source:str(1000),frequency_low:num,frequency_high:num,cpm_low:num,cpm_high:num}).superRefine((v,c)=>{if((v.spend!==null||v.reach!==null)&&!v.metric_source)c.addIssue({code:'custom',message:'Add a source, period and region for the metrics.'});if(v.frequency_low!==null&&v.frequency_high!==null&&v.frequency_low>v.frequency_high)c.addIssue({code:'custom',message:'Low frequency must not exceed high frequency.'});if(v.cpm_low!==null&&v.cpm_high!==null&&v.cpm_low>v.cpm_high)c.addIssue({code:'custom',message:'Low CPM must not exceed high CPM.'});});
 function response(data:unknown,status=200){return Response.json(data,{status,headers:{'Cache-Control':'no-store'}})}
-export async function GET(){try{const user=await getChatGPTUser();if(!user)return response({error:'Please sign in to access your workspace.'},401);const db=database();const result=await db.batch(['companies','ads','observations','activity','performance'].map(t=>db.prepare(`SELECT * FROM ${t} WHERE owner = ?`).bind(user.userId)));return response({schemaVersion:2,companies:result[0].results,ads:result[1].results,observations:result[2].results,activity:result[3].results,performance:result[4].results});}catch(e){console.error('workspace read',e);return response({error:'Your database could not be loaded. Please retry.'},503)}}
+export async function GET(){try{const user=await getChatGPTUser();if(!user)return response({error:'Please sign in to access your workspace.'},401);const db=database();const result=await db.batch(['companies','ads','observations','activity','performance','analysis_models'].map(t=>db.prepare(`SELECT * FROM ${t} WHERE owner = ?`).bind(user.userId)));return response({schemaVersion:3,companies:result[0].results,ads:result[1].results,observations:result[2].results,activity:result[3].results,performance:result[4].results,analysisModels:(result[5].results as Record<string,unknown>[]).map(r=>({company_id:r.company_id,model:JSON.parse(String(r.model_json)),updated_at:r.updated_at}))});}catch(e){console.error('workspace read',e);return response({error:'Your database could not be loaded. Please retry.'},503)}}
 export async function POST(request:Request){try{
  const user=await getChatGPTUser();if(!user)return response({error:'Please sign in to save changes.'},401);
  const origin=request.headers.get('origin');if(origin&&new URL(origin).origin!==new URL(request.url).origin)return response({error:'Invalid request origin.'},403);
  const raw=await request.text();if(raw.length>2000000)return response({error:'Import is too large. Use batches below 2 MB.'},413);
  const input=JSON.parse(raw),db=database(),owner=user.userId,now=new Date().toISOString(),uid=()=>crypto.randomUUID();
  const event=(message:string)=>db.prepare('INSERT INTO activity (id,owner,message,created_at) VALUES (?,?,?,?)').bind(uid(),owner,message,now);
+ if(input.action==='analysis.save'){
+  const company=z.string().min(1).parse(input.company_id),model=analysisSchema.parse(input.model);
+  if(!await db.prepare('SELECT id FROM companies WHERE id=? AND owner=?').bind(company,owner).first())return response({error:'Company not found.'},404);
+  const ads=(await db.prepare('SELECT id FROM ads WHERE company_id=? AND owner=?').bind(company,owner).all()).results;
+  if(model.evidence.some(e=>!ads.some(a=>a.id===e.ad_id)))return response({error:'Evidence must belong to an existing ad in this company.'},400);
+  if(model.to>now.slice(0,10)||model.evidence.some(e=>e.to>now.slice(0,10)))return response({error:'Evidence windows cannot end in the future.'},400);
+  await db.batch([db.prepare('INSERT INTO analysis_models (id,owner,company_id,model_json,updated_at) VALUES (?,?,?,?,?) ON CONFLICT(owner,company_id) DO UPDATE SET model_json=excluded.model_json,updated_at=excluded.updated_at').bind(uid(),owner,company,JSON.stringify(model),now),event('Saved spending assumptions and ad evidence')]);
+  return response({ok:true});
+ }
  if(input.action==='performance.delete_scope'){
   const scope=z.object({account_id:z.string().min(1),currency:z.string().regex(/^[A-Z]{3}$/),attribution:z.string().min(1)}).parse(input.scope);
   await db.batch([db.prepare('DELETE FROM performance WHERE owner=? AND account_id=? AND currency=? AND attribution=?').bind(owner,scope.account_id,scope.currency,scope.attribution),event('Removed a performance reporting scope')]);return response({ok:true});
@@ -43,7 +53,7 @@ export async function POST(request:Request){try{
   await db.batch([stmt,event(`${v.id?'Updated':'Added'} company · ${v.name}`)]);return response({id});
  }
  if(input.action==='company.delete'){
-  const id=z.string().parse(input.id);await db.batch([db.prepare('DELETE FROM performance WHERE company_id=? AND owner=?').bind(id,owner),db.prepare('DELETE FROM observations WHERE owner=? AND ad_id IN (SELECT id FROM ads WHERE company_id=? AND owner=?)').bind(owner,id,owner),db.prepare('DELETE FROM ads WHERE company_id=? AND owner=?').bind(id,owner),db.prepare('DELETE FROM companies WHERE id=? AND owner=?').bind(id,owner),event('Removed company and its saved ads')]);return response({ok:true});
+  const id=z.string().parse(input.id);await db.batch([db.prepare('DELETE FROM analysis_models WHERE company_id=? AND owner=?').bind(id,owner),db.prepare('DELETE FROM performance WHERE company_id=? AND owner=?').bind(id,owner),db.prepare('DELETE FROM observations WHERE owner=? AND ad_id IN (SELECT id FROM ads WHERE company_id=? AND owner=?)').bind(owner,id,owner),db.prepare('DELETE FROM ads WHERE company_id=? AND owner=?').bind(id,owner),db.prepare('DELETE FROM companies WHERE id=? AND owner=?').bind(id,owner),event('Removed company and its saved ads')]);return response({ok:true});
  }
  if(input.action==='ad.delete'){
   const id=z.string().parse(input.id);await db.batch([db.prepare('DELETE FROM observations WHERE ad_id=? AND owner=?').bind(id,owner),db.prepare('DELETE FROM ads WHERE id=? AND owner=?').bind(id,owner),event('Removed a saved ad')]);return response({ok:true});

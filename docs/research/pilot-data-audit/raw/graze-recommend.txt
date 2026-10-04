@@ -1,0 +1,1671 @@
+<div id="shopify-section-product-upsell-slider" class="shopify-section">
+
+<product-recommendations
+  class="pups-recommendations"
+  data-url="/recommendations/products?section_id=product-upsell-slider&product_id=7578158497974&limit=8&intent=related"
+>
+  
+    
+      <section id="product-upsell-product-upsell-slider" class="pups" data-pups-section>
+        <div class="pups__inner page-width">
+          <div class="pups__head">
+            
+              <h2 class="pups__title">You may also like...</h2>
+            
+
+            
+          </div>
+
+          <div class="pups__slider-wrap">
+            <div class="pups__viewport" data-slider-viewport>
+              <div class="pups__track" data-slider-track>
+                
+                  
+                  
+
+                  <article class="pups__slide" data-slide>
+                    <div class="pups-card">
+                      <a href="/products/new-peanut-butter-protein-granola-40g-bundle-of-5?pr_prod_strat=jac&pr_rec_id=b825e8ff1&pr_rec_pid=8803227369654&pr_ref_pid=7578158497974&pr_seq=uniform" class="pups-card__media-wrap">
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+                          
+
+                          <div class="pups-card__saving-badge">
+                            -RM1.00
+                          </div>
+                        
+
+                        <div class="pups-card__media">
+                          
+                            <img src="//www.amazingraze.com.my/cdn/shop/files/ProteinGranola40gPDP-14.png?v=1779591447&amp;width=900" alt="NEW Peanut Butter Protein Granola 40g [Bundle of 5]" srcset="//www.amazingraze.com.my/cdn/shop/files/ProteinGranola40gPDP-14.png?v=1779591447&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/ProteinGranola40gPDP-14.png?v=1779591447&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/ProteinGranola40gPDP-14.png?v=1779591447&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/ProteinGranola40gPDP-14.png?v=1779591447&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--primary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+
+                            
+                              <img src="//www.amazingraze.com.my/cdn/shop/files/Protein_Granola_40g_PDP-11.png?v=1779591484&amp;width=900" alt="NEW Peanut Butter Protein Granola 40g [Bundle of 5]" srcset="//www.amazingraze.com.my/cdn/shop/files/Protein_Granola_40g_PDP-11.png?v=1779591484&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/Protein_Granola_40g_PDP-11.png?v=1779591484&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/Protein_Granola_40g_PDP-11.png?v=1779591484&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/Protein_Granola_40g_PDP-11.png?v=1779591484&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--secondary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+                            
+                          
+                        </div>
+                      </a>
+
+                      <div class="pups-card__content">
+                        
+
+                        
+
+                        <h3 class="pups-card__title">
+                          <a href="/products/new-peanut-butter-protein-granola-40g-bundle-of-5?pr_prod_strat=jac&pr_rec_id=b825e8ff1&pr_rec_pid=8803227369654&pr_ref_pid=7578158497974&pr_seq=uniform">NEW Peanut Butter Protein Granola 40g [Bundle of 5]</a>
+                        </h3>
+
+                        
+                          <div class="pups-card__meta">
+                            <span class="pups-card__meta-dot"></span>
+                            <span>Breakfast</span>
+                          </div>
+                        
+
+                        <div class="pups-card__bottom">
+                          <div class="pups-card__price">
+                            
+                              <span class="pups-card__price-sale">RM22.90</span>
+                              <span class="pups-card__price-compare">RM23.90</span>
+                            
+                          </div>
+
+                          
+<form method="post" action="/cart/add" id="product-upsell-cart-form-product-upsell-slider-8803227369654" accept-charset="UTF-8" class="nt_cart_form variations_form pups-card__cart-form" enctype="multipart/form-data" data-productid="8803227369654"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><input name="id" data-productid="8803227369654" value="45140649672886" type="hidden">
+                              <input name="quantity" value="1" type="hidden">
+
+                              <button
+                                type="submit"
+                                data-time="1000"
+                                data-ani="none"
+                                class="pups-card__cart single_add_to_cart_button button truncate js_frm_cart"
+                                
+                                aria-label="Add NEW Peanut Butter Protein Granola 40g [Bundle of 5] to cart"
+                              >
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0584/3904/1206/files/bag-icon.svg?v=1778068661"
+                                  alt=""
+                                  loading="lazy"
+                                  width="68"
+                                  height="68"
+                                  class="pups-card__cart-icon"
+                                >
+                              </button><input type="hidden" name="product-id" value="8803227369654" /><input type="hidden" name="section-id" value="product-upsell-slider" /></form>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                
+                  
+                  
+
+                  <article class="pups__slide" data-slide>
+                    <div class="pups-card">
+                      <a href="/products/first-trial-kit?pr_prod_strat=jac&pr_rec_id=b825e8ff1&pr_rec_pid=7750722814134&pr_ref_pid=7578158497974&pr_seq=uniform" class="pups-card__media-wrap">
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        <div class="pups-card__media">
+                          
+                            <img src="//www.amazingraze.com.my/cdn/shop/files/Hero-SamplerPack.png?v=1745503418&amp;width=900" alt="Amazin&#39; First Trial Kit" srcset="//www.amazingraze.com.my/cdn/shop/files/Hero-SamplerPack.png?v=1745503418&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/Hero-SamplerPack.png?v=1745503418&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/Hero-SamplerPack.png?v=1745503418&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/Hero-SamplerPack.png?v=1745503418&amp;width=900 900w" width="900" height="1126" loading="lazy" class="pups-card__image pups-card__image--primary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+
+                            
+                              <img src="//www.amazingraze.com.my/cdn/shop/files/1_e0ff6c33-7786-4b59-96ac-487999f0f56b.png?v=1745503418&amp;width=900" alt="Amazin&#39; First Trial Kit" srcset="//www.amazingraze.com.my/cdn/shop/files/1_e0ff6c33-7786-4b59-96ac-487999f0f56b.png?v=1745503418&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/1_e0ff6c33-7786-4b59-96ac-487999f0f56b.png?v=1745503418&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/1_e0ff6c33-7786-4b59-96ac-487999f0f56b.png?v=1745503418&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/1_e0ff6c33-7786-4b59-96ac-487999f0f56b.png?v=1745503418&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--secondary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+                            
+                          
+                        </div>
+                      </a>
+
+                      <div class="pups-card__content">
+                        
+
+                        
+                          <div class="pups-card__rating-row">
+                            
+                              <div class="pups-card__stars" aria-label="Rating 4.25 out of 5">
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                  
+                                
+                              </div>
+                            
+
+                            
+                              <span class="pups-card__reviews">(16 reviews)</span>
+                            
+                          </div>
+                        
+
+                        <h3 class="pups-card__title">
+                          <a href="/products/first-trial-kit?pr_prod_strat=jac&pr_rec_id=b825e8ff1&pr_rec_pid=7750722814134&pr_ref_pid=7578158497974&pr_seq=uniform">Amazin' First Trial Kit</a>
+                        </h3>
+
+                        
+                          <div class="pups-card__meta">
+                            <span class="pups-card__meta-dot"></span>
+                            <span>Breakfast</span>
+                          </div>
+                        
+
+                        <div class="pups-card__bottom">
+                          <div class="pups-card__price">
+                            
+                              RM50.00
+                              
+                            
+                          </div>
+
+                          
+<form method="post" action="/cart/add" id="product-upsell-cart-form-product-upsell-slider-7750722814134" accept-charset="UTF-8" class="nt_cart_form variations_form pups-card__cart-form" enctype="multipart/form-data" data-productid="7750722814134"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><input name="id" data-productid="7750722814134" value="42607264563382" type="hidden">
+                              <input name="quantity" value="1" type="hidden">
+
+                              <button
+                                type="submit"
+                                data-time="1000"
+                                data-ani="none"
+                                class="pups-card__cart single_add_to_cart_button button truncate js_frm_cart"
+                                
+                                aria-label="Add Amazin&#39; First Trial Kit to cart"
+                              >
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0584/3904/1206/files/bag-icon.svg?v=1778068661"
+                                  alt=""
+                                  loading="lazy"
+                                  width="68"
+                                  height="68"
+                                  class="pups-card__cart-icon"
+                                >
+                              </button><input type="hidden" name="product-id" value="7750722814134" /><input type="hidden" name="section-id" value="product-upsell-slider" /></form>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                
+                  
+                  
+
+                  <article class="pups__slide" data-slide>
+                    <div class="pups-card">
+                      <a href="/products/oh-so-vanilla-on-the-go-pack-35g-x-6?pr_prod_strat=e5_desc&pr_rec_id=b825e8ff1&pr_rec_pid=7585320501430&pr_ref_pid=7578158497974&pr_seq=uniform" class="pups-card__media-wrap">
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        <div class="pups-card__media">
+                          
+                            <img src="//www.amazingraze.com.my/cdn/shop/files/Oh-So-Vanilla_On-The-Go_Sachets_6_X_35g.jpg?v=1745503460&amp;width=900" alt="Oh-So-Vanilla On-The-Go Sachets (6 x 35g)" srcset="//www.amazingraze.com.my/cdn/shop/files/Oh-So-Vanilla_On-The-Go_Sachets_6_X_35g.jpg?v=1745503460&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/Oh-So-Vanilla_On-The-Go_Sachets_6_X_35g.jpg?v=1745503460&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/Oh-So-Vanilla_On-The-Go_Sachets_6_X_35g.jpg?v=1745503460&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/Oh-So-Vanilla_On-The-Go_Sachets_6_X_35g.jpg?v=1745503460&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--primary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+
+                            
+                              <img src="//www.amazingraze.com.my/cdn/shop/files/01-AG_Vanilla_PDT_Web_Protein-Blend_Sachet.webp?v=1745503460&amp;width=900" alt="Oh-So-Vanilla On-The-Go Sachets (6 x 35g) - Amazin&#39; Graze Malaysia" srcset="//www.amazingraze.com.my/cdn/shop/files/01-AG_Vanilla_PDT_Web_Protein-Blend_Sachet.webp?v=1745503460&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/01-AG_Vanilla_PDT_Web_Protein-Blend_Sachet.webp?v=1745503460&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/01-AG_Vanilla_PDT_Web_Protein-Blend_Sachet.webp?v=1745503460&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/01-AG_Vanilla_PDT_Web_Protein-Blend_Sachet.webp?v=1745503460&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--secondary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+                            
+                          
+                        </div>
+                      </a>
+
+                      <div class="pups-card__content">
+                        
+
+                        
+                          <div class="pups-card__rating-row">
+                            
+                              <div class="pups-card__stars" aria-label="Rating 4.8 out of 5">
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                  
+                                
+                              </div>
+                            
+
+                            
+                              <span class="pups-card__reviews">(5 reviews)</span>
+                            
+                          </div>
+                        
+
+                        <h3 class="pups-card__title">
+                          <a href="/products/oh-so-vanilla-on-the-go-pack-35g-x-6?pr_prod_strat=e5_desc&pr_rec_id=b825e8ff1&pr_rec_pid=7585320501430&pr_ref_pid=7578158497974&pr_seq=uniform">Oh-So-Vanilla On-The-Go Sachets (6 x 35g)</a>
+                        </h3>
+
+                        
+                          <div class="pups-card__meta">
+                            <span class="pups-card__meta-dot"></span>
+                            <span>Protein Blend</span>
+                          </div>
+                        
+
+                        <div class="pups-card__bottom">
+                          <div class="pups-card__price">
+                            
+                              RM39.90
+                              
+                            
+                          </div>
+
+                          
+<form method="post" action="/cart/add" id="product-upsell-cart-form-product-upsell-slider-7585320501430" accept-charset="UTF-8" class="nt_cart_form variations_form pups-card__cart-form" enctype="multipart/form-data" data-productid="7585320501430"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><input name="id" data-productid="7585320501430" value="42206285594806" type="hidden">
+                              <input name="quantity" value="1" type="hidden">
+
+                              <button
+                                type="submit"
+                                data-time="1000"
+                                data-ani="none"
+                                class="pups-card__cart single_add_to_cart_button button truncate js_frm_cart"
+                                
+                                aria-label="Add Oh-So-Vanilla On-The-Go Sachets (6 x 35g) to cart"
+                              >
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0584/3904/1206/files/bag-icon.svg?v=1778068661"
+                                  alt=""
+                                  loading="lazy"
+                                  width="68"
+                                  height="68"
+                                  class="pups-card__cart-icon"
+                                >
+                              </button><input type="hidden" name="product-id" value="7585320501430" /><input type="hidden" name="section-id" value="product-upsell-slider" /></form>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                
+                  
+                  
+
+                  <article class="pups__slide" data-slide>
+                    <div class="pups-card">
+                      <a href="/products/breakfast-trial-bundle?pr_prod_strat=jac&pr_rec_id=b825e8ff1&pr_rec_pid=8814673789110&pr_ref_pid=7578158497974&pr_seq=uniform" class="pups-card__media-wrap">
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+                          
+
+                          <div class="pups-card__saving-badge">
+                            -RM2.26
+                          </div>
+                        
+
+                        <div class="pups-card__media">
+                          
+                            <img src="//www.amazingraze.com.my/cdn/shop/files/Breakfast_Trial_Bundle.png?v=1783303068&amp;width=900" alt="Amazin’ Graze Breakfast Trial Bundle" srcset="//www.amazingraze.com.my/cdn/shop/files/Breakfast_Trial_Bundle.png?v=1783303068&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/Breakfast_Trial_Bundle.png?v=1783303068&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/Breakfast_Trial_Bundle.png?v=1783303068&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/Breakfast_Trial_Bundle.png?v=1783303068&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--primary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+
+                            
+                              <img src="//www.amazingraze.com.my/cdn/shop/files/Breakfast_Trial_Bundle-11.png?v=1783303039&amp;width=900" alt="Amazin’ Graze Breakfast Trial Bundle" srcset="//www.amazingraze.com.my/cdn/shop/files/Breakfast_Trial_Bundle-11.png?v=1783303039&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/Breakfast_Trial_Bundle-11.png?v=1783303039&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/Breakfast_Trial_Bundle-11.png?v=1783303039&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/Breakfast_Trial_Bundle-11.png?v=1783303039&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--secondary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+                            
+                          
+                        </div>
+                      </a>
+
+                      <div class="pups-card__content">
+                        
+
+                        
+
+                        <h3 class="pups-card__title">
+                          <a href="/products/breakfast-trial-bundle?pr_prod_strat=jac&pr_rec_id=b825e8ff1&pr_rec_pid=8814673789110&pr_ref_pid=7578158497974&pr_seq=uniform">Amazin’ Graze Breakfast Trial Bundle</a>
+                        </h3>
+
+                        
+                          <div class="pups-card__meta">
+                            <span class="pups-card__meta-dot"></span>
+                            <span>Breakfast</span>
+                          </div>
+                        
+
+                        <div class="pups-card__bottom">
+                          <div class="pups-card__price">
+                            
+                              <span class="pups-card__price-sale">RM35.36</span>
+                              <span class="pups-card__price-compare">RM37.62</span>
+                            
+                          </div>
+
+                          
+<form method="post" action="/cart/add" id="product-upsell-cart-form-product-upsell-slider-8814673789110" accept-charset="UTF-8" class="nt_cart_form variations_form pups-card__cart-form" enctype="multipart/form-data" data-productid="8814673789110"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><input name="id" data-productid="8814673789110" value="45205422932150" type="hidden">
+                              <input name="quantity" value="1" type="hidden">
+
+                              <button
+                                type="submit"
+                                data-time="1000"
+                                data-ani="none"
+                                class="pups-card__cart single_add_to_cart_button button truncate js_frm_cart"
+                                
+                                aria-label="Add Amazin’ Graze Breakfast Trial Bundle to cart"
+                              >
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0584/3904/1206/files/bag-icon.svg?v=1778068661"
+                                  alt=""
+                                  loading="lazy"
+                                  width="68"
+                                  height="68"
+                                  class="pups-card__cart-icon"
+                                >
+                              </button><input type="hidden" name="product-id" value="8814673789110" /><input type="hidden" name="section-id" value="product-upsell-slider" /></form>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                
+                  
+                  
+
+                  <article class="pups__slide" data-slide>
+                    <div class="pups-card">
+                      <a href="/products/choco-holic-protein-blend-700g?pr_prod_strat=jac&pr_rec_id=b825e8ff1&pr_rec_pid=7578158661814&pr_ref_pid=7578158497974&pr_seq=uniform" class="pups-card__media-wrap">
+                        
+
+                        
+
+                        
+
+                        
+                          <div class="pups-card__badges">
+                            
+                              
+                                <span class="pups-card__badge">Popular</span>
+                              
+                            
+                          </div>
+                        
+
+                        
+
+                        <div class="pups-card__media">
+                          
+                            <img src="//www.amazingraze.com.my/cdn/shop/files/Choco-Holic_Protein_Blend_700g.jpg?v=1745503465&amp;width=900" alt="Choco-holic Protein Blend (700g)" srcset="//www.amazingraze.com.my/cdn/shop/files/Choco-Holic_Protein_Blend_700g.jpg?v=1745503465&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/Choco-Holic_Protein_Blend_700g.jpg?v=1745503465&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/Choco-Holic_Protein_Blend_700g.jpg?v=1745503465&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/Choco-Holic_Protein_Blend_700g.jpg?v=1745503465&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--primary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+
+                            
+                              <img src="//www.amazingraze.com.my/cdn/shop/products/03-AG_PDT_Web_Protein-Blend_Tub.webp?v=1745503465&amp;width=900" alt="Choco-holic Protein Blend (700g) - Amazin&#39; Graze Malaysia" srcset="//www.amazingraze.com.my/cdn/shop/products/03-AG_PDT_Web_Protein-Blend_Tub.webp?v=1745503465&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/products/03-AG_PDT_Web_Protein-Blend_Tub.webp?v=1745503465&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/products/03-AG_PDT_Web_Protein-Blend_Tub.webp?v=1745503465&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/products/03-AG_PDT_Web_Protein-Blend_Tub.webp?v=1745503465&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--secondary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+                            
+                          
+                        </div>
+                      </a>
+
+                      <div class="pups-card__content">
+                        
+
+                        
+                          <div class="pups-card__rating-row">
+                            
+                              <div class="pups-card__stars" aria-label="Rating 4.63 out of 5">
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                  
+                                
+                              </div>
+                            
+
+                            
+                              <span class="pups-card__reviews">(51 reviews)</span>
+                            
+                          </div>
+                        
+
+                        <h3 class="pups-card__title">
+                          <a href="/products/choco-holic-protein-blend-700g?pr_prod_strat=jac&pr_rec_id=b825e8ff1&pr_rec_pid=7578158661814&pr_ref_pid=7578158497974&pr_seq=uniform">Choco-holic Protein Blend (700g)</a>
+                        </h3>
+
+                        
+                          <div class="pups-card__meta">
+                            <span class="pups-card__meta-dot"></span>
+                            <span>Protein Blend</span>
+                          </div>
+                        
+
+                        <div class="pups-card__bottom">
+                          <div class="pups-card__price">
+                            
+                              RM99.90
+                              
+                                – RM284.72
+                              
+                            
+                          </div>
+
+                          
+<form method="post" action="/cart/add" id="product-upsell-cart-form-product-upsell-slider-7578158661814" accept-charset="UTF-8" class="nt_cart_form variations_form pups-card__cart-form" enctype="multipart/form-data" data-productid="7578158661814"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><input name="id" data-productid="7578158661814" value="42429143482550" type="hidden">
+                              <input name="quantity" value="1" type="hidden">
+
+                              <button
+                                type="submit"
+                                data-time="1000"
+                                data-ani="none"
+                                class="pups-card__cart single_add_to_cart_button button truncate js_frm_cart"
+                                
+                                aria-label="Add Choco-holic Protein Blend (700g) to cart"
+                              >
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0584/3904/1206/files/bag-icon.svg?v=1778068661"
+                                  alt=""
+                                  loading="lazy"
+                                  width="68"
+                                  height="68"
+                                  class="pups-card__cart-icon"
+                                >
+                              </button><input type="hidden" name="product-id" value="7578158661814" /><input type="hidden" name="section-id" value="product-upsell-slider" /></form>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                
+                  
+                  
+
+                  <article class="pups__slide" data-slide>
+                    <div class="pups-card">
+                      <a href="/products/bundle-of-2-box-of-6-protein-sachets?pr_prod_strat=e5_desc&pr_rec_id=b825e8ff1&pr_rec_pid=7857610522806&pr_ref_pid=7578158497974&pr_seq=uniform" class="pups-card__media-wrap">
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+                          
+
+                          <div class="pups-card__saving-badge">
+                            -RM2.39
+                          </div>
+                        
+
+                        <div class="pups-card__media">
+                          
+                            <img src="//www.amazingraze.com.my/cdn/shop/files/Bundle_Of_2_On-The-Go_Sachets_6_X_35g.jpg?v=1745503404&amp;width=900" alt="Bundle of 2 On-The-Go Sachets (6 x 35g)" srcset="//www.amazingraze.com.my/cdn/shop/files/Bundle_Of_2_On-The-Go_Sachets_6_X_35g.jpg?v=1745503404&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/Bundle_Of_2_On-The-Go_Sachets_6_X_35g.jpg?v=1745503404&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/Bundle_Of_2_On-The-Go_Sachets_6_X_35g.jpg?v=1745503404&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/Bundle_Of_2_On-The-Go_Sachets_6_X_35g.jpg?v=1745503404&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--primary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+
+                            
+                          
+                        </div>
+                      </a>
+
+                      <div class="pups-card__content">
+                        
+
+                        
+                          <div class="pups-card__rating-row">
+                            
+                              <div class="pups-card__stars" aria-label="Rating 5.0 out of 5">
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                              </div>
+                            
+
+                            
+                              <span class="pups-card__reviews">(4 reviews)</span>
+                            
+                          </div>
+                        
+
+                        <h3 class="pups-card__title">
+                          <a href="/products/bundle-of-2-box-of-6-protein-sachets?pr_prod_strat=e5_desc&pr_rec_id=b825e8ff1&pr_rec_pid=7857610522806&pr_ref_pid=7578158497974&pr_seq=uniform">Bundle of 2 On-The-Go Sachets (6 x 35g)</a>
+                        </h3>
+
+                        
+                          <div class="pups-card__meta">
+                            <span class="pups-card__meta-dot"></span>
+                            <span>Protein Blend</span>
+                          </div>
+                        
+
+                        <div class="pups-card__bottom">
+                          <div class="pups-card__price">
+                            
+                              <span class="pups-card__price-sale">RM77.41</span>
+                              <span class="pups-card__price-compare">RM79.80</span>
+                            
+                          </div>
+
+                          
+<form method="post" action="/cart/add" id="product-upsell-cart-form-product-upsell-slider-7857610522806" accept-charset="UTF-8" class="nt_cart_form variations_form pups-card__cart-form" enctype="multipart/form-data" data-productid="7857610522806"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><input name="id" data-productid="7857610522806" value="42948105011382" type="hidden">
+                              <input name="quantity" value="1" type="hidden">
+
+                              <button
+                                type="submit"
+                                data-time="1000"
+                                data-ani="none"
+                                class="pups-card__cart single_add_to_cart_button button truncate js_frm_cart"
+                                
+                                aria-label="Add Bundle of 2 On-The-Go Sachets (6 x 35g) to cart"
+                              >
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0584/3904/1206/files/bag-icon.svg?v=1778068661"
+                                  alt=""
+                                  loading="lazy"
+                                  width="68"
+                                  height="68"
+                                  class="pups-card__cart-icon"
+                                >
+                              </button><input type="hidden" name="product-id" value="7857610522806" /><input type="hidden" name="section-id" value="product-upsell-slider" /></form>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                
+                  
+                  
+
+                  <article class="pups__slide" data-slide>
+                    <div class="pups-card">
+                      <a href="/products/bundle-of-3-mini-pandan-coconut-nut-mix-3x40g?pr_prod_strat=jac&pr_rec_id=b825e8ff1&pr_rec_pid=7633384865974&pr_ref_pid=7578158497974&pr_seq=uniform" class="pups-card__media-wrap">
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        <div class="pups-card__media">
+                          
+                            <img src="//www.amazingraze.com.my/cdn/shop/files/MINIS_BO3_NUTMIX.gif?v=1745503441&amp;width=900" alt="Bundle of 3 Mini Nut Mix (3x30g)" srcset="//www.amazingraze.com.my/cdn/shop/files/MINIS_BO3_NUTMIX.gif?v=1745503441&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/MINIS_BO3_NUTMIX.gif?v=1745503441&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/MINIS_BO3_NUTMIX.gif?v=1745503441&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/MINIS_BO3_NUTMIX.gif?v=1745503441&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--primary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+
+                            
+                          
+                        </div>
+                      </a>
+
+                      <div class="pups-card__content">
+                        
+
+                        
+                          <div class="pups-card__rating-row">
+                            
+                              <div class="pups-card__stars" aria-label="Rating 4.4 out of 5">
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                  
+                                
+                              </div>
+                            
+
+                            
+                              <span class="pups-card__reviews">(5 reviews)</span>
+                            
+                          </div>
+                        
+
+                        <h3 class="pups-card__title">
+                          <a href="/products/bundle-of-3-mini-pandan-coconut-nut-mix-3x40g?pr_prod_strat=jac&pr_rec_id=b825e8ff1&pr_rec_pid=7633384865974&pr_ref_pid=7578158497974&pr_seq=uniform">Bundle of 3 Mini Nut Mix (3x30g)</a>
+                        </h3>
+
+                        
+                          <div class="pups-card__meta">
+                            <span class="pups-card__meta-dot"></span>
+                            <span>Nuts</span>
+                          </div>
+                        
+
+                        <div class="pups-card__bottom">
+                          <div class="pups-card__price">
+                            
+                              RM17.70
+                              
+                            
+                          </div>
+
+                          
+<form method="post" action="/cart/add" id="product-upsell-cart-form-product-upsell-slider-7633384865974" accept-charset="UTF-8" class="nt_cart_form variations_form pups-card__cart-form" enctype="multipart/form-data" data-productid="7633384865974"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><input name="id" data-productid="7633384865974" value="42306858549430" type="hidden">
+                              <input name="quantity" value="1" type="hidden">
+
+                              <button
+                                type="submit"
+                                data-time="1000"
+                                data-ani="none"
+                                class="pups-card__cart single_add_to_cart_button button truncate js_frm_cart"
+                                
+                                aria-label="Add Bundle of 3 Mini Nut Mix (3x30g) to cart"
+                              >
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0584/3904/1206/files/bag-icon.svg?v=1778068661"
+                                  alt=""
+                                  loading="lazy"
+                                  width="68"
+                                  height="68"
+                                  class="pups-card__cart-icon"
+                                >
+                              </button><input type="hidden" name="product-id" value="7633384865974" /><input type="hidden" name="section-id" value="product-upsell-slider" /></form>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                
+                  
+                  
+
+                  <article class="pups__slide" data-slide>
+                    <div class="pups-card">
+                      <a href="/products/bundle-of-3-on-the-go-sachets-6-x-35g?pr_prod_strat=e5_desc&pr_rec_id=b825e8ff1&pr_rec_pid=7645038805174&pr_ref_pid=7578158497974&pr_seq=uniform" class="pups-card__media-wrap">
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+                          
+
+                          <div class="pups-card__saving-badge">
+                            -RM10.80
+                          </div>
+                        
+
+                        <div class="pups-card__media">
+                          
+                            <img src="//www.amazingraze.com.my/cdn/shop/files/Bundle_Of_3_On-The-Go_Sachets_6_X_35g.jpg?v=1745503433&amp;width=900" alt="Bundle of 3 On-The-Go Sachets (6 x 35g)" srcset="//www.amazingraze.com.my/cdn/shop/files/Bundle_Of_3_On-The-Go_Sachets_6_X_35g.jpg?v=1745503433&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/Bundle_Of_3_On-The-Go_Sachets_6_X_35g.jpg?v=1745503433&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/Bundle_Of_3_On-The-Go_Sachets_6_X_35g.jpg?v=1745503433&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/Bundle_Of_3_On-The-Go_Sachets_6_X_35g.jpg?v=1745503433&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--primary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+
+                            
+                              <img src="//www.amazingraze.com.my/cdn/shop/files/CHOCO-SACHET-01.png?v=1745503434&amp;width=900" alt="Bundle of 3 On-The-Go Sachets (6 x 35g)" srcset="//www.amazingraze.com.my/cdn/shop/files/CHOCO-SACHET-01.png?v=1745503434&amp;width=320 320w, //www.amazingraze.com.my/cdn/shop/files/CHOCO-SACHET-01.png?v=1745503434&amp;width=480 480w, //www.amazingraze.com.my/cdn/shop/files/CHOCO-SACHET-01.png?v=1745503434&amp;width=640 640w, //www.amazingraze.com.my/cdn/shop/files/CHOCO-SACHET-01.png?v=1745503434&amp;width=900 900w" width="900" height="1125" loading="lazy" class="pups-card__image pups-card__image--secondary" sizes="(min-width: 1200px) calc((100vw - 238px) / 4), (min-width: 750px) calc((100vw - 80px) / 2), 84vw">
+                            
+                          
+                        </div>
+                      </a>
+
+                      <div class="pups-card__content">
+                        
+
+                        
+                          <div class="pups-card__rating-row">
+                            
+                              <div class="pups-card__stars" aria-label="Rating 4.2 out of 5">
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z"/>
+                                    </svg>
+                                  
+                                
+                                  
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                      <path d="M12 2.8 14.76 8.4l6.18.9-4.47 4.36 1.06 6.16L12 16.9 6.47 19.82l1.06-6.16L3.06 9.3l6.18-.9L12 2.8Z" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                  
+                                
+                              </div>
+                            
+
+                            
+                              <span class="pups-card__reviews">(5 reviews)</span>
+                            
+                          </div>
+                        
+
+                        <h3 class="pups-card__title">
+                          <a href="/products/bundle-of-3-on-the-go-sachets-6-x-35g?pr_prod_strat=e5_desc&pr_rec_id=b825e8ff1&pr_rec_pid=7645038805174&pr_ref_pid=7578158497974&pr_seq=uniform">Bundle of 3 On-The-Go Sachets (6 x 35g)</a>
+                        </h3>
+
+                        
+                          <div class="pups-card__meta">
+                            <span class="pups-card__meta-dot"></span>
+                            <span>Protein Blend</span>
+                          </div>
+                        
+
+                        <div class="pups-card__bottom">
+                          <div class="pups-card__price">
+                            
+                              <span class="pups-card__price-sale">RM108.90</span>
+                              <span class="pups-card__price-compare">RM119.70</span>
+                            
+                          </div>
+
+                          
+<form method="post" action="/cart/add" id="product-upsell-cart-form-product-upsell-slider-7645038805174" accept-charset="UTF-8" class="nt_cart_form variations_form pups-card__cart-form" enctype="multipart/form-data" data-productid="7645038805174"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><input name="id" data-productid="7645038805174" value="42343719796918" type="hidden">
+                              <input name="quantity" value="1" type="hidden">
+
+                              <button
+                                type="submit"
+                                data-time="1000"
+                                data-ani="none"
+                                class="pups-card__cart single_add_to_cart_button button truncate js_frm_cart"
+                                
+                                aria-label="Add Bundle of 3 On-The-Go Sachets (6 x 35g) to cart"
+                              >
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0584/3904/1206/files/bag-icon.svg?v=1778068661"
+                                  alt=""
+                                  loading="lazy"
+                                  width="68"
+                                  height="68"
+                                  class="pups-card__cart-icon"
+                                >
+                              </button><input type="hidden" name="product-id" value="7645038805174" /><input type="hidden" name="section-id" value="product-upsell-slider" /></form>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="pups__controls" data-pups-controls>
+            <button class="pups__nav pups__nav--prev" type="button" data-prev aria-label="Previous">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M14.5 6 8.5 12l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <div class="pups__dots" data-dots></div>
+
+            <button class="pups__nav pups__nav--next" type="button" data-next aria-label="Next">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m9.5 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    
+  
+</product-recommendations>
+
+<style>
+  #product-upsell-product-upsell-slider {
+    background: #fdfcfb;
+    padding: 56px 0 42px;
+    overflow: hidden;
+  }
+
+  #product-upsell-product-upsell-slider .page-width {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  #product-upsell-product-upsell-slider .pups__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 34px;
+  }
+
+  #product-upsell-product-upsell-slider .pups__title {
+    margin: 0;
+    color: #102824;
+    font-size: 58px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  #product-upsell-product-upsell-slider .pups__decor {
+    display: flex;
+    align-items: flex-start;
+    gap: 58px;
+    min-width: 160px;
+    justify-content: flex-end;
+    padding-right: 28px;
+  }
+
+  #product-upsell-product-upsell-slider .pups__decor img {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+  }
+
+  #product-upsell-product-upsell-slider .pups__viewport {
+    overflow: hidden;
+  }
+
+  #product-upsell-product-upsell-slider .pups__track {
+    display: flex;
+    gap: 42px;
+    transition: transform .45s ease;
+    will-change: transform;
+  }
+
+  #product-upsell-product-upsell-slider .pups__slide {
+    min-width: calc((100% - 126px) / 4);
+    max-width: calc((100% - 126px) / 4);
+    flex: 0 0 calc((100% - 126px) / 4);
+  }
+
+  #product-upsell-product-upsell-slider .pups-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__media-wrap {
+    position: relative;
+    display: block;
+    background: #eedfd1;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__badges {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: calc(100% - 120px);
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 16px;
+    border-radius: 999px;
+    background: #d74f4b;
+    color: #fff4ec;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__saving-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: #d74f4b;
+    color: #fff4ec;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__media {
+    position: relative;
+    aspect-ratio: 0.86 / 1;
+    background: #eedfd1;
+    overflow: hidden;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: opacity .35s ease, transform .45s ease;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__image--secondary {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__media-wrap:hover .pups-card__image--primary {
+    opacity: 0;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__media-wrap:hover .pups-card__image--secondary {
+    opacity: 1;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__media-wrap:hover .pups-card__image {
+    transform: scale(1.04);
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__content {
+    padding-top: 18px;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__rating-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #f2a531;
+    flex-wrap: nowrap;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__stars svg {
+    width: 22px !important;
+    min-width: 22px !important;
+    max-width: 22px !important;
+    height: 22px !important;
+    min-height: 22px !important;
+    max-height: 22px !important;
+    flex: 0 0 22px !important;
+    display: block;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__reviews {
+    color: #69706e;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__title {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #102824;
+    min-height: calc(18px * 1.2 * 2);
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0e6a4a;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__meta-dot {
+    width: 12px;
+    height: 18px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #0e6a4a;
+    flex: 0 0 auto;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__price,
+  #product-upsell-product-upsell-slider .pups-card__price-sale {
+    color: #102824;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__price-compare {
+    color: #69706e;
+    font-size: 14px;
+    margin-left: 8px;
+    text-decoration: line-through;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__cart-form {
+    margin: 0;
+    line-height: 0;
+    flex: 0 0 auto;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__cart,
+  #product-upsell-product-upsell-slider .pups-card__cart.button,
+  #product-upsell-product-upsell-slider button.pups-card__cart.single_add_to_cart_button {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 68px !important;
+    height: 68px !important;
+    min-width: 68px !important;
+    min-height: 68px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    color: inherit !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer;
+    transition: transform .2s ease, opacity .2s ease;
+    flex: 0 0 68px !important;
+    overflow: hidden;
+    box-shadow: none !important;
+    outline: none !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__cart::before,
+  #product-upsell-product-upsell-slider .pups-card__cart::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__cart-icon {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    max-height: 100% !important;
+    flex: 0 0 100% !important;
+    display: block;
+    object-fit: contain;
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__cart:hover {
+    transform: translateY(-2px);
+  }
+
+  #product-upsell-product-upsell-slider .pups-card__cart:disabled {
+    opacity: .45;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  #product-upsell-product-upsell-slider .pups__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 42px;
+  }
+
+  #product-upsell-product-upsell-slider .pups__nav {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 2px solid #e2a63c;
+    background: transparent;
+    color: #275e53;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity .2s ease, transform .2s ease;
+  }
+
+  #product-upsell-product-upsell-slider .pups__nav svg {
+    width: 30px !important;
+    min-width: 30px !important;
+    max-width: 30px !important;
+    height: 30px !important;
+    min-height: 30px !important;
+    max-height: 30px !important;
+    flex: 0 0 30px !important;
+    display: block;
+  }
+
+  #product-upsell-product-upsell-slider .pups__nav:hover {
+    transform: translateY(-2px);
+  }
+
+  #product-upsell-product-upsell-slider .pups__nav[disabled] {
+    opacity: .45;
+    cursor: default;
+    transform: none;
+  }
+
+  #product-upsell-product-upsell-slider .pups__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  #product-upsell-product-upsell-slider .pups__dot {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 12px !important;
+    min-width: 12px !important;
+    max-width: 12px !important;
+    height: 12px !important;
+    min-height: 12px !important;
+    max-height: 12px !important;
+    flex: 0 0 12px !important;
+    border-radius: 50%;
+    background: #b8c4bc;
+    cursor: pointer;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+  }
+
+  #product-upsell-product-upsell-slider .pups__dot.is-active {
+    background: #0e6a4a;
+    transform: scale(1.05);
+  }
+
+  #product-upsell-product-upsell-slider .pups__empty {
+    color: #69706e;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  @media screen and (max-width: 1199px) {
+    #product-upsell-product-upsell-slider .page-width {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+    #product-upsell-product-upsell-slider .pups__title {
+      font-size: 46px;
+    }
+
+    #product-upsell-product-upsell-slider .pups__track {
+      gap: 24px;
+    }
+
+    #product-upsell-product-upsell-slider .pups__slide {
+      min-width: calc((100% - 24px) / 2);
+      max-width: calc((100% - 24px) / 2);
+      flex-basis: calc((100% - 24px) / 2);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    #product-upsell-product-upsell-slider {
+      padding: 34px 0 28px;
+    }
+
+    #product-upsell-product-upsell-slider .page-width {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    #product-upsell-product-upsell-slider .pups__head {
+      margin-bottom: 20px;
+    }
+
+    #product-upsell-product-upsell-slider .pups__title {
+      font-size: 34px;
+    }
+
+    #product-upsell-product-upsell-slider .pups__decor {
+      display: none;
+    }
+
+    #product-upsell-product-upsell-slider .pups__track {
+      gap: 16px;
+    }
+
+    #product-upsell-product-upsell-slider .pups__slide {
+      min-width: 84%;
+      max-width: 84%;
+      flex-basis: 84%;
+    }
+
+    #product-upsell-product-upsell-slider .pups-card__badges {
+      top: 12px;
+      left: 12px;
+      gap: 6px;
+      max-width: calc(100% - 100px);
+    }
+
+    #product-upsell-product-upsell-slider .pups-card__badge {
+      padding: 6px 12px;
+      font-size: 11px;
+    }
+
+    #product-upsell-product-upsell-slider .pups-card__saving-badge {
+      top: 12px;
+      right: 12px;
+      min-height: 26px;
+      padding: 6px 12px;
+      font-size: 11px;
+    }
+
+    #product-upsell-product-upsell-slider .pups-card__title {
+      font-size: 20px;
+      min-height: calc(20px * 1.2 * 2);
+    }
+
+    #product-upsell-product-upsell-slider .pups-card__meta {
+      font-size: 16px;
+    }
+
+    #product-upsell-product-upsell-slider .pups-card__price,
+    #product-upsell-product-upsell-slider .pups-card__price-sale {
+      font-size: 19px;
+    }
+
+    #product-upsell-product-upsell-slider .pups-card__cart,
+    #product-upsell-product-upsell-slider .pups-card__cart.button,
+    #product-upsell-product-upsell-slider button.pups-card__cart.single_add_to_cart_button {
+      width: 56px !important;
+      height: 56px !important;
+      min-width: 56px !important;
+      min-height: 56px !important;
+      flex-basis: 56px !important;
+    }
+
+    #product-upsell-product-upsell-slider .pups-card__cart-icon {
+      width: 100% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
+      height: 100% !important;
+      min-height: 100% !important;
+      max-height: 100% !important;
+      flex: 0 0 100% !important;
+    }
+
+    #product-upsell-product-upsell-slider .pups__nav {
+      width: 56px;
+      height: 56px;
+    }
+
+    #product-upsell-product-upsell-slider .pups__nav svg {
+      width: 24px !important;
+      min-width: 24px !important;
+      max-width: 24px !important;
+      height: 24px !important;
+      min-height: 24px !important;
+      max-height: 24px !important;
+      flex: 0 0 24px !important;
+    }
+
+    #product-upsell-product-upsell-slider .pups__controls {
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    #product-upsell-product-upsell-slider .pups__dots {
+      gap: 10px;
+    }
+
+    #product-upsell-product-upsell-slider .pups__dot {
+      width: 10px !important;
+      min-width: 10px !important;
+      max-width: 10px !important;
+      height: 10px !important;
+      min-height: 10px !important;
+      max-height: 10px !important;
+      flex: 0 0 10px !important;
+    }
+
+    #product-upsell-product-upsell-slider .pups-card__stars svg {
+      width: 18px !important;
+      min-width: 18px !important;
+      max-width: 18px !important;
+      height: 18px !important;
+      min-height: 18px !important;
+      max-height: 18px !important;
+      flex: 0 0 18px !important;
+    }
+
+    #product-upsell-product-upsell-slider .pups-card__reviews {
+      font-size: 14px;
+    }
+  }
+</style>
+
+<script>
+  (() => {
+    function initPupsSlider(scope) {
+      const section = scope.querySelector('[data-pups-section]') || scope;
+
+      if (!section || section.dataset.pupsInitialized === 'true') return;
+
+      const viewport = section.querySelector('[data-slider-viewport]');
+      const track = section.querySelector('[data-slider-track]');
+      const slides = Array.from(section.querySelectorAll('[data-slide]'));
+      const prevBtn = section.querySelector('[data-prev]');
+      const nextBtn = section.querySelector('[data-next]');
+      const dotsWrap = section.querySelector('[data-dots]');
+      const controls = section.querySelector('[data-pups-controls]');
+
+      if (!viewport || !track || !slides.length || !prevBtn || !nextBtn || !dotsWrap) {
+        if (controls) controls.hidden = true;
+        return;
+      }
+
+      section.dataset.pupsInitialized = 'true';
+
+      let currentIndex = 0;
+      let currentSlidesPerView = 4;
+      let pages = 1;
+
+      function getSlidesPerView() {
+        if (window.innerWidth <= 749) return 1;
+        if (window.innerWidth <= 1199) return 2;
+        return 4;
+      }
+
+      function buildDots() {
+        dotsWrap.innerHTML = '';
+
+        for (let i = 0; i < pages; i++) {
+          const dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'pups__dot' + (i === currentIndex ? ' is-active' : '');
+          dot.setAttribute('aria-label', 'Go to slide group ' + (i + 1));
+
+          dot.addEventListener('click', () => {
+            currentIndex = i;
+            update();
+          });
+
+          dotsWrap.appendChild(dot);
+        }
+      }
+
+      function updateButtons() {
+        prevBtn.disabled = currentIndex <= 0;
+        nextBtn.disabled = currentIndex >= pages - 1;
+
+        if (controls) {
+          controls.hidden = pages <= 1;
+        }
+      }
+
+      function update() {
+        currentSlidesPerView = getSlidesPerView();
+        pages = Math.max(1, Math.ceil(slides.length / currentSlidesPerView));
+
+        if (currentIndex > pages - 1) {
+          currentIndex = pages - 1;
+        }
+
+        const firstSlide = slides[0];
+        const trackStyles = getComputedStyle(track);
+        const gap = parseFloat(trackStyles.columnGap || trackStyles.gap || 0);
+        const slideWidth = firstSlide.getBoundingClientRect().width;
+        const offset = currentIndex * ((slideWidth + gap) * currentSlidesPerView);
+
+        track.style.transform = `translate3d(${-offset}px, 0, 0)`;
+
+        buildDots();
+        updateButtons();
+      }
+
+      prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+          currentIndex -= 1;
+          update();
+        }
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (currentIndex < pages - 1) {
+          currentIndex += 1;
+          update();
+        }
+      });
+
+      let resizeTimer;
+
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(update, 120);
+      });
+
+      update();
+    }
+
+    if (!customElements.get('product-recommendations')) {
+      customElements.define(
+        'product-recommendations',
+        class ProductRecommendations extends HTMLElement {
+          connectedCallback() {
+            if (this.dataset.loaded === 'true') return;
+
+            const url = this.dataset.url;
+
+            if (!url) return;
+
+            const loadRecommendations = () => {
+              fetch(url)
+                .then((response) => response.text())
+                .then((text) => {
+                  const html = new DOMParser().parseFromString(text, 'text/html');
+                  const recommendations = html.querySelector('product-recommendations');
+
+                  if (recommendations && recommendations.innerHTML.trim().length) {
+                    this.innerHTML = recommendations.innerHTML;
+                    this.dataset.loaded = 'true';
+                    initPupsSlider(this);
+                  } else {
+                    this.remove();
+                  }
+                })
+                .catch((error) => {
+                  console.error('Product recommendations failed:', error);
+                  this.remove();
+                });
+            };
+
+            if ('IntersectionObserver' in window) {
+              const observer = new IntersectionObserver((entries, observerInstance) => {
+                if (!entries[0].isIntersecting) return;
+
+                observerInstance.unobserve(this);
+                loadRecommendations();
+              }, {
+                rootMargin: '0px 0px 300px 0px'
+              });
+
+              observer.observe(this);
+            } else {
+              loadRecommendations();
+            }
+          }
+        }
+      );
+    }
+
+    document.querySelectorAll('product-recommendations').forEach((element) => {
+      if (element.dataset.loaded === 'true' || element.querySelector('[data-pups-section]')) {
+        initPupsSlider(element);
+      }
+    });
+
+    document.addEventListener('shopify:section:load', (event) => {
+      const recommendations = event.target.querySelector('product-recommendations');
+
+      if (recommendations) {
+        recommendations.dataset.loaded = '';
+      }
+
+      document.querySelectorAll('product-recommendations').forEach((element) => {
+        if (element.querySelector('[data-pups-section]')) {
+          initPupsSlider(element);
+        }
+      });
+    });
+  })();
+</script>
+
+</div>

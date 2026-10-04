@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-04",
+  "status": "Design options only; no application patch",
+  "recommendation": 1,
+  "preview": "white-ui-directions.html",
+  "references": [
+    {
+      "option": 1,
+      "name": "Linear workspace",
+      "source": "https://linear.app/now/how-we-redesigned-the-linear-ui",
+      "font": "Inter Display headings and Inter body documented by Linear; preview uses Inter",
+      "proposedColors": {
+        "body": "#FFFFFF",
+        "sidebar": "#F7F7F8",
+        "text": "#202124",
+        "border": "#E7E8EC",
+        "accent": "#4F5BD5"
+      },
+      "layout": "Compact sidebar, white continuous report, metric strip, spending chart, searchable ad rows and detail inspector"
+    },
+    {
+      "option": 2,
+      "name": "Metabase report",
+      "source": "https://www.metabase.com/dashboards/ad-spend-pacing",
+      "fontSource": "https://www.metabase.com/docs/latest/configuring-metabase/fonts",
+      "font": "Lato documented default",
+      "proposedColors": {
+        "body": "#FFFFFF",
+        "surface": "#F7F9FB",
+        "text": "#26323B",
+        "border": "#DFE6EB",
+        "accent": "#327CB4"
+      },
+      "layout": "Top navigation, compact summary cards, aligned charts and evidence table"
+    },
+    {
+      "option": 3,
+      "name": "Plausible overview",
+      "source": "https://plausible.io/simple-web-analytics",
+      "font": "Inter proposed for our adaptation; exact Plausible app font not verified",
+      "proposedColors": {
+        "body": "#FFFFFF",
+        "surface": "#F7F7FA",
+        "text": "#20212A",
+        "border": "#E6E7ED",
+        "accent": "#6253D9"
+      },
+      "layout": "Minimal top navigation, single company report, one primary spending chart and visible creative gallery"
+    }
+  ],
+  "paletteNote": "All hex palettes are proposed Ad Observatory tokens, not asserted official product tokens.",
+  "patchPlan": [
+    "Consolidate layered styles in app/globals.css into one white theme with semantic colour tokens.",
+    "Use one selected font family with clear heading weights and tabular numeric figures; load actual font assets.",
+    "Keep Companies, Compare and Saved ads; make company search the entry point.",
+    "Align business comparison rows and common chart scales; preserve visible assumption labels.",
+    "Refactor focused-report.tsx into summary, spending visual, ads list and detail inspector; move edit inputs into a drawer.",
+    "Render full ad media and clear source links where saved; use an explicit unavailable media state.",
+    "Use 14px controls, 15px copy, 24-28px headings, 6-8px corners and consistent spacing.",
+    "Collapse unavailable performance metrics into one explanation with Add evidence action.",
+    "Check light tooltips, dialogs, menus, date controls, keyboard focus, narrow screens and data logic."
+  ],
+  "browserQA": "Not performed in this turn; prior localhost browser restriction remains.",
+  "mockData": "Entirely fictional for visual comparison; no competitor evidence added."
+}
