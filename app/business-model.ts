@@ -65,8 +65,8 @@ export function adFacts(ad:Ad,w:Workspace,asOf:number){
  const activeTimes=[...new Set(observations.filter(o=>o.status==='Active').map(o=>Date.parse(o.observed_at)))].sort((a,b)=>a-b);
  return {sourceAge:sourceAge(ad.start_date,asOf),activeSpan:activeTimes.length<2?null:Math.floor((activeTimes.at(-1)!-activeTimes[0])/DAY),activeDays:new Set(activeTimes.map(t=>new Date(t).toISOString().slice(0,10))).size,adChecks:observations.length,copyWords:ad.body.trim()?ad.body.trim().split(/\s+/u).length:null,observations};
 }
-export function businessFacts(w:Workspace,companyId:string,count:number,asOf:number){
- const ads=w.ads.filter(a=>a.company_id===companyId),ids=new Set(ads.map(a=>a.id)),dates=reportDates(count,asOf),first=dates[0],last=dates.at(-1)!;
+export function businessFacts(w:Workspace,companyId:string,count:number,asOf:number,windowDates?:string[]){
+ const ads=w.ads.filter(a=>a.company_id===companyId),ids=new Set(ads.map(a=>a.id)),dates=windowDates??reportDates(count,asOf),first=dates[0],last=dates.at(-1)!;
  const observations=w.observations.filter(o=>ids.has(o.ad_id)&&time(o.observed_at)!==null&&time(o.observed_at)!<=asOf);
  const facts=ads.map(a=>adFacts(a,w,asOf)),ages=facts.flatMap(f=>f.sourceAge===null?[]:[f.sourceAge]),spans=facts.flatMap(f=>f.activeSpan===null?[]:[f.activeSpan]);
  const inWindow=(s:string)=>s.slice(0,10)>=first&&s.slice(0,10)<=last;
