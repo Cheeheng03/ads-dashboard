@@ -1,6 +1,6 @@
 # Ad Observatory
 
-Chee Heng’s private competitor-ad research workspace. Companies, ads, pins, annotations, observations and activity are stored in a dedicated Cloudflare D1 database. Every API operation is scoped to the signed-in owner; production access is private through Sites.
+Chee Heng’s private competitor-ad research workspace. Companies, ads, pins, annotations, observations, daily account reports and activity are stored in a dedicated Cloudflare D1 database. Every API operation is scoped to the signed-in owner; production access is private through Sites.
 
 ## Available workflows
 
@@ -13,6 +13,22 @@ Chee Heng’s private competitor-ad research workspace. Companies, ads, pins, an
 - Export the complete workspace as JSON. This is a data backup; the ad importer accepts ads for one selected company and is not a full workspace restore tool.
 - Enter sourced reach/spend and optional frequency/CPM assumptions. Scenarios are labeled estimates and apply to the entered reach period, not lifetime spend.
 
+## Analytics and report imports
+
+The charcoal design system follows the supplied PicGen reference: dotted canvas, nested graphite panels, thin borders and restrained green, blue, violet and amber accents. `app/analytics.tsx` renders Recharts visualizations, analytical tables, report preview and the built-in metrics guide. `app/analytics-model.ts` holds normalization and aggregation functions. `app/sample-data.ts` is opt-in fictional data kept in React memory, never written to D1.
+
+- Overview: discovery/check timeline, format mix, competitor table, source-age distribution, annotation coverage and stale checks.
+- Creative intelligence: angle distribution and copy/hook/hypothesis comparison.
+- Spend & revenue: daily spend and attributed purchase value, weighted ROAS/CTR/CPC/CPM/CPA, reported conversion events, contribution-margin scenario, ad-level rollups and daily source rows.
+- Filters: company, 7/30/90-day period, currency and attribution scope. UTC dates define the research window; report dates retain the advertiser's account timezone, recorded in scope.
+- Import up to 500 daily ad-level Insights JSON rows (2 MB). Export with `level=ad`, `time_increment=1`, no breakdowns. A downloadable Python Business SDK exporter is in `public/meta-insights-export.py`; it needs the owner's token and authorized account locally. It has not been executed against a real account in this workspace.
+- Enter the exact attribution windows, report-time basis and account timezone as the scope. Re-importing the same owner/account/ad/date/currency/scope upserts instead of adding duplicates. Scope removal deletes only that account/currency/attribution combination, with confirmation.
+- Canonical `purchase` actions and values are used; overlapping action aliases are not summed. Missing action types remain null. Supply an explicit zero only when the report establishes zero. Aggregates remain unknown if a contributing row lacks that measure. Days without rows render gaps.
+- Reach is visible per original daily ad scope and is never summed. Frequency is calculated only for that row. Ratios use summed numerators and denominators; currencies and attribution scopes never mix.
+- JSON workspace export includes performance rows. Performance CSV exports the filtered daily records and neutralizes spreadsheet formula prefixes in text cells.
+
+The database migration is additive. Existing companies, ads, curation and observation history remain intact. The schema does not equate public Library IDs with Ads Manager ad IDs.
+
 ## Scope and data integrity
 
 No automatic Meta collector, paid provider, LLM analysis, revenue connection or recurring job is configured. Data comes from manual entries and imports. Ad age is elapsed time since the source start date, not proof of continuous delivery or profitable performance. Competitor CTR, clicks, revenue and actual spend remain unknown unless supplied by an authorized or disclosed source.
@@ -21,7 +37,7 @@ Image URLs reference the source remotely and may expire; original creative files
 
 ## Verification
 
-Run `npx tsc --noEmit` and the build command below. With the portable local preview running, `python3 tests/workspace-smoke.py` checks anonymous access, spoofed identity rejection, origin validation, persistence, deduplication, curation retention, timestamp integrity, import atomicity, invalid metric rejection and cascade deletion using local-only fixtures.
+Run `npx tsc --noEmit`, `npm run lint`, `node --experimental-strip-types tests/analytics.test.mjs` and the build command below. `python3 tests/performance-smoke.py` verifies daily upserts, invalid-row atomicity, scope isolation and report deletion. With the portable local preview running, `python3 tests/workspace-smoke.py` checks anonymous access, spoofed identity rejection, origin validation, persistence, deduplication, curation retention, timestamp integrity, import atomicity, invalid metric rejection and cascade deletion using local-only fixtures.
 
 ## Prerequisites
 
