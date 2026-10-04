@@ -29,6 +29,25 @@ The charcoal design system follows the supplied PicGen reference: dotted canvas,
 
 The database migration is additive. Existing companies, ads, curation and observation history remain intact. The schema does not equate public Library IDs with Ads Manager ad IDs.
 
+## Business comparisons and focused reports
+
+`Compare businesses` independently calculates both sides with one date window, currency and reporting scope. Spend, oldest source-start age and reported ROAS lead the view. Inventory completeness, active/unknown status counts, source-age statistics, field coverage and arithmetic differences are available in the detailed table. Format and age distributions, discovery timelines, longevity lists, spend-by-ad charts and account rankings expose the underlying records.
+
+`Company report` opens from either the sidebar or a company card. It includes all saved creatives with full original copy, media where a source URL exists, dates, format, market, source links, Library IDs, manually supplied evidence, notes, hypotheses and check history. Cards are searchable, sortable and paginated (12 per page); a metric-table view shows the same records. Company financial records stay separate from public creative IDs.
+
+Every calculated metric and chart in these reports has a keyboard/touch-accessible info popover describing formula, source/scope and interpretation. Existing overview chart and KPI headers also link to these explanations. `app/business-model.ts` is the common calculation/explanation registry; `app/metric-info.tsx` implements the shared popover. Comparisons use full precision before rounding for display.
+
+Important definitions:
+- Source age is UTC calendar days since a valid, non-future source start date, as of the report snapshot. Inactive ads continue to have a calendar age. It is not paid duration.
+- Observed-active span requires at least two distinct Active check timestamps, and measures the elapsed whole days between them. Pauses in unobserved gaps are not inferred away. Distinct active-check dates count observations, not paid delivery dates.
+- Public inventory is the saved collection, never asserted as all ads the company runs. Library ID coverage flags weak deduplication evidence. No survival or profitability score is inferred from age.
+- Account rankings can use spend, ROAS, CPA, purchases or spend per represented date. The latter divides complete reported spend by dates with report rows; it is not a fixed maintenance fee, configured budget or launch-age adjustment. Unknown values rank last; zero denominators remain unavailable.
+- Reported reach is inspected only within an original ad/day row. Daily frequency uses that row's impressions/reach. No cross-ad or cross-day reach total is manufactured.
+- Manual public-ad spend/reach remains attached to its supplied source text and is never aggregated into business financial totals because scope equivalence is unverified.
+- Fictional sample data is optional, read-only and never inserted into the database.
+
+Run `node tests/run-business-tests.mjs` for boundary dates, medians, missing/zero handling, collection and reporting scope, repeated checks, uncertain active spans, weighted ratios and account grouping. Browser checks cover comparison swaps, company report selection, formula popovers, copy search, pagination and responsive overflow.
+
 ## Scope and data integrity
 
 No automatic Meta collector, paid provider, LLM analysis, revenue connection or recurring job is configured. Data comes from manual entries and imports. Ad age is elapsed time since the source start date, not proof of continuous delivery or profitable performance. Competitor CTR, clicks, revenue and actual spend remain unknown unless supplied by an authorized or disclosed source.

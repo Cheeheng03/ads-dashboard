@@ -5,7 +5,7 @@ export type Metric=typeof metrics[number];
 export type Performance={id?:string;company_id:string;account_id:string;ad_id:string;ad_name:string;date:string;currency:string;attribution:string;source:string;imported_at?:string} & Record<Metric,number|null>;
 export const ratio=(a:number|null,b:number|null,m=1)=>a===null||b===null||b===0?null:a/b*m;
 // Missing measures stay unknown. Do not silently turn an incomplete report into a total.
-export function total(rows:Performance[],field:Metric){return !rows.length||rows.some(r=>r[field]===null)?null:rows.reduce((n,r)=>n+r[field]!,0)}
+export function total(rows:Performance[],field:Metric){return !rows.length||rows.some(r=>r[field]===null||r[field]===undefined||!Number.isFinite(r[field]))?null:rows.reduce((n,r)=>n+r[field]!,0)}
 export function summarize(rows:Performance[]){const spend=total(rows,'spend'),revenue=total(rows,'revenue'),impressions=total(rows,'impressions'),clicks=total(rows,'clicks'),purchases=total(rows,'purchases');return {spend,revenue,impressions,clicks,purchases,ctr:ratio(clicks,impressions,100),cpc:ratio(spend,clicks),cpm:ratio(spend,impressions,1000),cpa:ratio(spend,purchases),roas:ratio(revenue,spend)}}
 export function days(count:number){const end=new Date();end.setUTCHours(0,0,0,0);return Array.from({length:count},(_,i)=>new Date(end.getTime()-(count-i-1)*86400000).toISOString().slice(0,10))}
 export function publicAnalytics(workspace:Workspace,count:number,companyId='all'){
